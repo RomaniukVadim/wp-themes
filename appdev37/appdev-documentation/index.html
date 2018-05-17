@@ -1,0 +1,1652 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Appdev WordPress Theme Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+          media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box {
+            margin-bottom: 25px;
+            }
+
+        .box p {
+            margin-bottom: 10px;
+            }
+        p img {
+            max-width: 960px;
+            }
+        hr {
+            margin-top: 15px;
+            }
+    </style>
+    <link rel="stylesheet" href="assets/blueprint-css/custom.css" type="text/css"
+      media="screen, projection">
+</head>
+
+
+<body>
+<div class="container">
+
+<h3 class="center alt">“Appdev” WordPress Theme for Mobile App Showcase - Documentation by “LiveMesh” v3.6</h3>
+
+<hr/>
+
+<h1 class="center">“Appdev”</h1>
+
+<div class="borderTop">
+    <div class="span-6 colborder info prepend-1">
+        <p class="prepend-top"><strong>
+            Created: 05/24/2013</strong></p>
+        By: LiveMesh
+
+        <strong>Email: <a href="http://themeforest.net/user/livemesh">Use my ThemeForest profile page</a>
+        </strong>
+
+    </div>
+    &nbsp;
+    <div class="span-12 last">
+        <p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond
+            what is provided in this help file, feel free to email us through the contact form <a
+                    href="http://themeforest.net/user/livemesh">here</a>. You should also <a
+                    href="http://twitter.com/live_mesh">follow us on twitter</a> to get the updates. Thanks again!</p>
+
+    </div>
+</div>
+&nbsp;
+
+<hr/>
+
+<h2 id="toc" class="alt">Table of Contents</h2>
+<ol class="alpha">
+    <li><a href="#installation">Installation and Single Page Site Configuration</a></li>
+    <li><a href="#general">General Options</a></li>
+    <li><a href="#header">Header and Logo Options - How to Add Custom Logo, Customize Header and add Social Icons</a>
+    </li>
+    <li><a href="#footer">Footer Options</a></li>
+    <li><a href="#layout-management">Site Layout Options</a></li>
+    <li><a href="#font-colors-backgrounds">Fonts, Colors and Background Options</a></li>
+    <li><a href="#primary-menu-options">Primary and Sticky Menu Options - How to add Navigation Menus to your site.</a>
+    </li>
+    <li><a href="#custom-css">Custom CSS</a></li>
+    <li><a href="#portfolio-page">Portfolio Page Options - How to make Portfolio Entries</a></li>
+    <li><a href="#slider-entry">Setting up Sliders (Revolution/Nivo/Flex) and related configuration</a></li>
+    <li><a href="#set-featured-image">Set Featured Image</a></li>
+    <li><a href="#video">Video Options</a></li>
+    <li><a href="#shortcode-builder">Custom Post Types, Shortcodes and Shortcodes Builder</a></li>
+    <li><a href="#contact-form">Contact Form</a></li>
+    <li><a href="#widgets-sidebars">Custom Widgets and Sidebars</a></li>
+    <li><a href="#page-templates">Custom Page Templates</a></li>
+    <li><a href="#translation">Translation and Localization</a></li>
+    <li><a href="#icon-fonts">500+ Icons Usage</a></li>
+    <li><a href="#unlimited-sidebars">Unlimited Sidebars</a></li>
+    <li><a href="#custom-headers">Custom Headings for Post/Page</a></li>
+    <li><a href="#page-sections">Site Configuration with Legacy Page Sections</a></li>
+    <li><a href="#migration-v31">Important - Migrating to v3.1 from versions v3.0 and below</a></li>
+</ol>
+
+<hr/>
+
+<h3 id="installation"><strong>Installation and One Page Site Configuration</strong> - <a href="#toc">top</a></h3>
+<ol>
+    <li>For easy help on installation of any theme released by LiveMesh, go through the <strong>Video Tutorials</strong>
+        posted on Youtube - <a href="http://www.youtube.com/channel/UCgI4wSJ0TDigLHzyVORWo8g"
+                               title="Video Tutorials for theme setup">http://www.youtube.com/channel/UCgI4wSJ0TDigLHzyVORWo8g</a>.
+    </li>
+    <li>Download and unzip theme package file. The following folders will be in the unzipped file:
+        <ul>
+            <li><strong>appdev</strong> - theme files that you need upload to your wordpress installation.</li>
+            <li><strong>resource\psds</strong> - all layered psd files for the theme.</li>
+            <li><strong>licensing</strong> - license for the theme.</li>
+            <li><strong>documentation</strong> - documentation files for the theme.</li>
+        </ul>
+    </li>
+    <li>Before you install the theme, make sure your wordpress version is 4.3 or higher. Then upload only the folder
+        "appdev" to the /wp-content/themes folder of your WordPress installation root directory or ftp the folder to
+        /wp-content/themes/ through your FTP Client.
+    <li>Next login to your WordPress admin panel and go to <a
+            href="http://codex.wordpress.org/Administration_Panels#Appearance" target="_blank">Appearance</a> -&gt; <a
+            href="http://codex.wordpress.org/Administration_Panels#Themes" target="_blank">Themes</a> subpanel. Then
+        look for <strong>Appdev</strong> theme and activate it just like you would activate any other theme.
+    </li>
+    <li>Once activated <strong>Appdev</strong>, you will see the new panels below added to the <a
+            href="http://codex.wordpress.org/Administration_Panels" target="_blank">Administration Panels.</a>
+
+        <p><img src="assets/images/appdev-options.png" alt="Appdev Admin Panel"/></p>
+    </li>
+</ol>
+
+<h4 id="data-import"><strong>Importing Theme Data</strong> - <a href="#toc">top</a></h4>
+
+<p>If you need help installing Wordpress see the link below to know more about:
+
+    <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">http://codex.wordpress.org/Installing_WordPress</a>
+</p>
+
+<p>It's not so difficult to use our theme to build your website. Actually to make it easy for you to build your website,
+    we have attached the content xml file with the theme package, so that you can import lots of
+    ready content to your installation. Once you have activated the theme, all you need to do is save the xml file to
+    any location and import the contents using Wordpress importer plugin. </p>
+
+<p>If you want to know how to import the contents from xml file please see this
+    <a href="http://www.youtube.com/watch?v=ST40OORShLg">video tutorial</a> on how to import a WordPress XML File Of
+    Posts and Pages</p>
+
+<p>Once you are done importing the content, Please explore the "Pages", "Posts" etc on the admin panel and edit them as
+    per your requirement. Please read this documentation for any assistance on the theme, and also we will be happy to
+    assist you in all possible manner. </p>
+
+<h4 id="site-configuration-siteorigin"><strong>Site Configuration with SiteOrigin Page Builder</strong> - <a href="#toc">top</a></h4>
+
+<p>If you import the sample data, all the required pages including home pages, page sections part of these pages, portfolio entries are all created for you. If you
+need to know about how the initial site configuration works with Appdev, this section can help you. Some of these steps are covered in the
+    <a href="https://www.livemeshthemes.com/faqs/agile-theme-how-to-setup-theme-and-revolution-slider-youtube-video/">video tutorial</a>.</p>
+
+<p>Appdev can function as a multi-page or as a single page or as popularly known, an one page theme. Appdev recommends using SiteOrigin page builder to help building a site of either type easier.</p>
+
+<p><strong>Step 1:</strong> Appdev recommends installing the following plugins for page building. The theme prompts the users to install the below plugins automatically upon activation. Just follow the prompts at the top to install the below plugins. </p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/plugin-activation.png" alt="Plugin Activation Prompt"/></p>
+
+<p><a href="https://wordpress.org/plugins/siteorigin-panels/">SiteOrigin Page Builder</a> - is the most intuitive, lightweight yet feature-rich WordPress page builder around that lets you compose your page using page builder elements/widgets. The theme comes preloaded with about 30 page builder elements and additional 15 elements are provided via our LiveMesh SiteOrigin widgets plugin linked below. </p>
+
+<p><a href="https://wordpress.org/plugins/so-widgets-bundle/">SiteOrigin Widgets Bundle</a> - that lets you develop widgets or page builder elements and comes with about 10 highly configurable page builder widgets of its own. </p>
+
+<p><a href="https://wordpress.org/plugins/livemesh-siteorigin-widgets/">Livemesh SiteOrigin Widgets</a> - is a free yet well supported plugin on wordpress.org, developed and maintained by the author of this theme. This plugin adds about 17 premium quality widgets to the SiteOrigin page builder. This is in addition to about 30 page builder elements provided by the theme itself. </p>
+
+<p>If you use the widgets from Livemesh SiteOrigin Widgets plugin and need support, feel free to get in touch with us in our <a href="https://www.livemeshthemes.com/">support forum</a>. You can see all the widgets in action at the <a href="https://www.livemeshthemes.com/siteorigin-widgets">plugin live demo site</a>.</p>
+
+<p><strong>Step 2:</strong> Once activated, you can use page template <strong>One Column No Sidebars</strong> to design your home page and additional pages for your site. Refer to the documentation for the respective plugins to know more about using the page builder and its widgets. 
+
+<p class="center"><img class="img-thumbnail" src="assets/images/page-builder.png" alt="Page Builder"/></p>
+
+When using page builder, do pay special attention to a few options that are used in the theme sample pages as shown in the below image. The theme has often these attributes set in the Row Edit window. 
+
+<p class="center"><img class="img-thumbnail" src="assets/images/edit-row-styles.png" alt="Edit Row Styles"/></p>
+
+<p>When you set Row ID, navigation menu on the top can house internal links to these page elements in the page builder helping to navigate within the page. </p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/edit-row-layout.png" alt="Edit Row Layout"/></p>
+
+<p>For more information on using the Page Builder by SiteOrigin, pls refer to the documentation </p>
+
+<p><a href="https://siteorigin.com/page-builder/documentation/">https://siteorigin.com/page-builder/documentation/</a>.</p>
+
+<p><a href="https://siteorigin.com/widgets-bundle/">https://siteorigin.com/widgets-bundle/</a></p>
+
+<p><strong>Step 3: </strong>Make this page the home page by choosing it as one in the <strong>'Settings->Reading'</strong> tab. Pls have a
+    look at the <a href="https://www.livemeshthemes.com/faqs/agile-theme-how-to-setup-theme-and-revolution-slider-youtube-video/">video tutorial</a> if you not
+    familiar with these functions or hit a roadblock somewhere.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/set-home-page.png" alt="Set Home Page"/></p>
+
+<p><strong>Step 4: </strong>Use the  WordPress menu to populate the top navigation menu in Appearance->Menus tab in the WordPress admin. Make sure
+    you setup one of the menus as the primary menu for the site and also make sure setup all internal links to page sections inside a
+    single page manually.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/wp-menu-setup-single-page.png" alt="WordPress Menu Setup for Single Page"/>
+</p>
+
+<p><strong>Step 5: </strong>To set custom background for pages/posts/portfolio items, navigate to <strong>Theme Options->Backgrounds</strong> tab and change the options for
+    'Background for Title Header Area' and 'Background for Portfolio Title Area' as seen the screenshot below. You can adjust the height of
+    the background as well using the available options 'Height of Top Title Area' and 'Height of Top Portfolio Title Header Area'.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/set-header-options.png" alt="Custom Headers for Posts/Pages/Portfolio"/></p>
+
+<p>Once you have the page created and set as home page, just open the home page to verify that the page does contain the desired sections and the chosen navigation is displayed at the top of the page. </p>
+
+<p>You now have a small working site setup now. With the help of page builder you can now continue developing your site in an easy yet productive way.</p>
+
+<div class="page-header" id="multiple-one-page"><h3>Multiple Single Pages in a site</h3></div>
+
+<p>To create multiple single pages, you will need to create another page with the page template 'One Column No Sidebars' and
+    then in the page edit window, use the SiteOrigin page builder to build the pages just as described above. This helps you to create
+    multiple one page templates to showcase multiple products or multiple aspects of your business in a single wordpress installation. </p>
+<p>Since each of these sub-pages have page sections of their own, you can create a custom menu in the WordPress Appearances -> Menus window and configure a custom WP
+    menu for a page. The theme provides a dropdown for choosing a custom menu in the page edit window (see bottom of the screenshot below). </p>
+<p>In order to save time replicating some of the menu items in the primary menu in custom menu, you can use the <a
+        href="http://wordpress.org/plugins/duplicate-menu/" title="Duplicate Menu plugin">Duplicate Menu</a> plugin to duplicate the
+    primary menu used for home page and then start customizing it to meet the needs of another One Page (Single Page) template page. </p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/one-page-configuration.png" alt="Single Page Options Panel"/></p>
+
+<hr/>
+
+<h3 id="general"><strong>General Options</strong> - <a href="#toc">top</a></h3>
+
+<p>Once activated, <strong>Appdev</strong> provides a number of options for customizing your site. <strong>The options
+    panel is mostly self-explanatory with reasonable documentation on each and every option provided there</strong>.
+    While not repeating the documentation already provided there, we will try to cover some of the less obvious details
+    here
+    in this document. Let us look at the General tab of <strong>Appdev</strong> Options.</p>
+
+<p class="center"><img src="assets/images/2-general-options.png" alt="General Tab of Appdev Options"/></p>
+.
+
+<p><i>Slider Choice</i> - <strong>Appdev</strong> comes with three responsive Slider options including the premium
+    Revolution Slider for building a rich home pages for your website. The Revolution Slider is bundled with the theme
+    and comes with its own documentation. Do refer to the same for help with Revolution slider. Do check our <a
+            title="Appdev Live Preview" href=" http://www.portfoliotheme.org/appdev"><strong>Appdev</strong> live
+        preview website</a> for many different types of home page formats that are available for use by the users. </p>
+
+<p><b>To know more about how to add sliders to a page, go the section <a href="#slider-entry">How to Add Slides for
+    Sliders</a></b></p>
+
+<hr/>
+
+<h3 id="header"><strong>Logo and Header Options with Social Icons</strong> - <a href="#toc">top</a></h3>
+
+<p><b>Appdev Logo Options Panel</b> allows the user to upload logo image. Option to forego image logo and go for text
+    also is provided. </p>
+
+<p class="center"><img src="assets/images/2-site-logo.png" alt="Logo Option Panel"/></p>
+
+<p><b>Appdev Header Options Panel</b> allows the user to manage the top header area of a page. You can insert social
+    icons here. Navigation menus can be enabled through standard WordPress Admin panel for Menu under Appearance tab.
+</p>
+<i>Tagline for Blog Post</i> - For blog post, specify the text to display in this area. 'Blog' is the default. Unlike
+blog posts, the tagline area of a page displays the page title.</p>
+Remove tagline from Home Page - Remove tagline displayed on top of the home page (the default WordPress blog view shown
+when no static page is specified as home page).
+<p class="center"><img src="assets/images/8-header-options.png" alt="Header Option Panel"/></p>
+
+The theme allows you to have social icons on the top right corner of each page. <b>Social icons are not shown when Get
+    App
+    button is enabled</b>. Hence, this has no effect unless the Get App button is disabled in the Header tab above.
+<hr/>
+<p class="center"><img src="assets/images/social-options.png" alt="Social Icons Option Panel"/></p>
+
+<h3 id="footer"><strong>Footer Options</strong> - <a href="#toc">top</a></h3>
+
+<p>Footer area of <strong>Appdev</strong> is quite flexible with many different options on number of widgets you can
+    place and how you want them to be arranged. The Widget panel lists a total of six Footer areas to which you can drag
+    and drop a WordPress native widgets as well as widgets provided by <strong>Appdev</strong>.</p>
+Footer Columns - Along with providing simple option of having equal sized 2,3,4,5,6 columns, you also have options to
+specify how the footer widgets need to be arranged.
+Google Analytics Code - The Google Analytics option can be found in the miscelleneous tab of the theme options
+panel.<strong>Appdev</strong> is Google Analytics ready. To start tracking users, signup for <a
+        href="http:/www.google.com/analytics">Google analytics</a>, obtain the tracking code and paste it into this text
+box to start tracking user activity for your website.</p>
+
+<p>You can modify the copyright text shown in the footer of each page by providing the modified text in the header
+    tab.</p>
+
+<p class="center"><img src="assets/images/9-footer-options.png" alt="Footer Option Panel"/></p>
+
+
+<hr/>
+
+<h3 id="layout-management"><strong>Site Layout Options</strong> - <a href="#toc">top</a></h3>
+
+<p><strong>Appdev</strong> supports single column and 2 column layouts for static pages, portfolio pages as well as blog
+    posts. The options panel helps change the layouts for static pages, blog pages and archive pages like those of
+    categories, tags or authors. The <a href="https://www.livemeshthemes.com/appdev/" title="Appdev Live Preview site">Appdev
+        Live Preview Site</a> showcases many of these layouts and styling (see below) to help familiarize the user with
+    them.</p>
+
+<p class="center"><img src="assets/images/10-site-layout.png" alt="Site Layout"/></p>
+
+<hr/>
+
+<h3 id="font-colors-backgrounds"><strong>Fonts, Colors and Backgrounds Options</strong> - <a href="#toc">top</a></h3>
+
+<p><b>Appdev</b> provides options to change font family, font size and font spacing for your Headings and Body. More
+    than 500 fonts are available for use. If you need additional fonts, you may import and use the same with the help of
+    the <a href="#custom-css"> Custom CSS</a> panel in theme options. Do visit <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a>
+    for instructions on adding additional fonts through css.</p>
+
+<p class="center"><img src="assets/images/3-font-options.png" alt="Fonts Options Pane"/></p>
+
+<p>Appdev comes with extraordinary amount of customizations for colors. Most of these options helps build a custom
+    website for yourself with your custom fonts, custom colors, backgrounds, banners, icons etc. </p>
+
+<p>Choose the right colors for your website to come up with a unique looking site where every element blends well with
+    every other one. </p>
+
+<p class="center"><img src="assets/images/4-color-options.png" alt="Color Options Pane"/></p>
+
+<p>Choosing the right backgrounds for your site can greatly enhance its appeal. Almost any part of any Appdev page can
+    be customized for its background. </p>
+
+<p>Choose boxed layout for that extra effect when setting custom backgrounds. Most of these are straightforward and
+    online contextual help should explain the purpose of each customization.</p>
+
+<p class="center"><img src="assets/images/5-background-options.png" alt="Backgrounds Options Pane"/></p>
+
+<hr/>
+
+<h3 id="primary-menu-options"><strong>Primary and Sticky Menu Options - How to add Navigation Menus to your
+    site.</strong> - <a href="#toc">top</a></h3>
+
+<p>Pls visit <a href="http://codex.wordpress.org/WordPress_Menu_User_Guide">WordPress Menu User Guide</a> to know more
+    about how to add menus to WordPress site.</p>
+
+<p>Below you can see options to customize the primary menu shown on the top header of any page - </p>
+
+<p class="center"><img src="assets/images/7-primary-menu-options.png" alt="Primary Menu Options"/></p>.
+
+
+<hr/>
+
+<h3 id="custom-css"><strong>Custom CSS </strong> - <a href="#toc">top</a></h3>
+
+<p>No matter how many font, color and backgrounds you have on the options panel, there is always some custom CSS code
+    that you may like to see applied to achieve that perfect look. Use Custom CSS tab to override or extend every other
+    option, including the styles defined by skins.
+    This Custom CSS is handy when you can't find the option you want or just in a mood to write CSS code instead of
+    choosing an option.</p>
+
+<p class="center"><img src="assets/images/15-custom-css.png" alt="Custom CSS"/></p>
+
+<hr/>
+
+<h3 id="portfolio-page"><strong>Portfolio Page Options - How to make Portfolio Entries</strong> - <a
+        href="#toc">top</a></h3>
+
+<p><strong>Appdev</strong> provides following page templates for building your portfolio pages as shown below. Use these
+    templates to customize your portfolio pages in the page edit window.</p>
+
+<p class="center"><img src="assets/images/31-portfolio-templates.png" alt="Portfolio Page Templates"/></p>
+
+You can specify that the excerpts be shown in the Portfolio Pages through the below options.
+
+<p class="center"><img src="assets/images/11-portfolio-options.png" alt="Portfolio Page Options"/></p>
+
+<p>You can enter portfolio pages by choosing to add Portfolio Custom Post Type in the Portfolio Admin Panel as shown
+    below</p>
+
+<p class="center"><img src="assets/images/29-portfolio-admin-panel.png" alt="Portfolio Admin Panel"/></p>
+
+<p>More precise instructions on portfolio entry below - </p>
+
+If you want to add a new portfolio item, follow the steps below:
+<ol>
+    <li><p>Click "<span class="panel_title">Add New</span>" in the "<span class="panel_title">Portfolio</span>" panel.
+    </p>
+
+        <p class="center"><img src="assets/images/31-new-portfolio-entry.png" alt="Portfolio Page Entry"/></p>
+    </li>
+    <li>Portfolio thumbnail is specified by <strong>Featured Image</strong> function of WordPress. Go <a
+            href="#setfeatured">here</a> to see how to set a <strong>Featured Image</strong> for a post, page or a
+        custom post type in WordPress.
+    </li>
+    <li>Then specify the title, and add content to the rich text editor. You can also provide excerpt through to the
+        <strong>Excerpt</strong> textarea for display in the portfolio page.
+    </li>
+    <li>Once you have done, click <strong>Publish</strong> button.</li>
+</ol>
+
+<p class="center"><img src="assets/images/30-portfolio-entered.png" alt="Portfolio Page Entered"/></p>
+
+
+<hr/>
+
+
+<h3 id="slider-entry"><strong>How to Add Slides for Sliders</strong> - <a href="#toc">top</a></h3>
+
+<p>The Slider options panels for each of the slider types are self-explanatory. To display  Nivo or Flex sliders, slider entries of
+    custom post type named "Showcase Slides" that corresponds to a slider have to be created before Nivo or Flex Sliders can be displayed.</p>
+
+<p>To create a page with sliders on the top, you just need to choose the desired options in the Page Edit window as seen below</p>
+
+<p>The specific slider to be displayed can be chosen in the "Display Slider and Remove Title Header" dropdown provided in the Page Edit window as seen in the below screenshot. The title header for the page
+is automatically disabled when a slider is chosen for a page.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/slider-selection.png" alt="Page Creation with Slider"/></p>
+
+The data and images required for the Sliders are sourced as explained below. This provides for rich customization of the
+site with the option to showcase multiple types of data on the website.</p>
+
+<h4>Revolution Slider: </h4>
+
+<p>The Revolution Slider is installed as a plugin into WordPress. Pls read <a
+        href="http://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/">plugin
+    install guide</a> for instructions on how to install plugins into WordPress. The Revolution Slider is bundled with
+    the theme as a separate zip file or can be installed by following the prompts displayed in the WordPress admin by the theme
+to install revolution slider plugin.</p>
+
+<p>To display Revolution Slider on your site, follow the below steps  -
+<ol>
+    <li>Create a new WordPress page and choose the Revolution Slider as the option </li>
+
+<li>Choose Revolution Slider as the option in the "Display Slider and Remove Title Header" dropdown provided in the Page Edit window as seen in the below screenshot.</li>
+
+
+<li>Choose specific instance of Revolution Slider as the option in the "Revolution Slider Choice" dropdown provided.</li>
+
+
+</ol>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/slider-selection.png" alt="Page Creation with Slider"/></p>
+
+
+<ol>
+    <li>You can browse through the Revolution Slider documentation on how to use the admin panel for the slider.</li>
+    <p class="center"><img class="img-thumbnail" src="assets/images/revolution-slider.png" alt="Admin Panel for Revolution Slider"/></p>
+    <li>The theme comes with import data for the Revolution Slider instance displayed in the <a
+            href="https://www.livemeshthemes.com/fitpro/">live preview page</a>.Do refer to the documentation for Revolution
+        Slider for help on importing the data.
+    </li>
+</ol>
+
+<h3>Nivo Slider, FlexSlider</h3>
+<p>These sliders display posts created of type Showcase Slide custom post type. You will need to create posts of this 
+custom post type in the Showcase Slides admin panel.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/showcase-slides-2.png" alt="Showcase Slides"/></p>
+
+<p>If you want to add a new slide for the Nivo or an Flex slider, here are the steps: </p>
+<ol>
+    <li><p>Click "<span class="panel_title">Add New Slide</span>" in the "<span
+            class="panel_title">Showcase Slides</span>" admin panel.</p>
+
+        <p class="center"><img class="img-thumbnail" src="assets/images/showcase-slides.png" alt="Slider Slide Entry"/></p></li>
+    <li>Use the <strong>Featured Image</strong> function to set the image for the Slide of the Slider. <strong>The image
+        size for Flex as well Nivo Slider should be minimum 1920px width and minimum 600px height so as to render the
+        slider images right on wide screens</strong>. Click <a href="#setfeatured">here</a> to see how to set a <strong>Featured Image</strong>.
+    </li>
+    <li>Specify the link, description (Showcase Slider Information) , click <strong>Publish</strong> Button.</li>
+</ol>
+
+<p>Below are the options provided for Nivo sliders.</p>
+
+<p><b>Flex Slider Options</b></p>
+
+<p class="center"><img src="assets/images/12-flex-slider-options.png" alt="Flex Slider Option Panel"/></p>
+
+<p><b>Nivo Slider Options</b></p>
+
+<p class="center"><img src="assets/images/13-nivo-slider-options.png" alt="Nivo Slider Option Panel"/></p>
+
+<hr/>
+
+<h3 id="set-featured-image"><strong>Set Featured Image</strong> - <a href="#toc">top</a></h3>
+Featured Images function of WordPress is central to specifying thumbnail images posts, portfolio items, slider items
+etc. If you want to set <strong>Featured Image</strong> for page, post, or custom post types like portfolio or slider
+slides, follow the steps below:
+<ol>
+    <li>Go to <strong>Add New</strong> or open an existing post in editing mode.</li>
+    <li><p>Find the <strong>Featured Image</strong> section and click the <strong>Set featured image</strong> link.</p>
+
+        <p class="center"><img src="assets/images/31-new-portfolio-entry.png"
+                               alt="Setting Featured Image for a Portfolio"/></p>
+    </li>
+    <li>You will see popup window for <a href="http://en.support.wordpress.com/images/#uploading-images"
+                                         target="_blank">uploading an image</a> for inserting into a blog post, page or
+        custom post type or for using this image as featured image on the post, page or custom posts. Follow the
+        on-screen prompts to choose the image from your computer (or better drag and drop the one or more images into
+        the file uploader) and upload it or choose one one of the images already uploaded to your Media Library.
+    </li>
+    <li><p>Once the image is uploaded, choose the size of the image, and click on the Use as featured link:</p>
+
+        <p class="center"><img src="assets/images/set-featured-image.png" alt="Set Featured Image"/></p>
+        Close the Set Featured Image window once you’ve chosen the featured image. The image is now available for use
+        wherever the post, portfolio item or slider slide is displayed as in a slider or portfolio page.
+    </li>
+</ol>
+
+<hr/>
+
+<h3 id="video"><strong>Video Options</strong> - <a href="#toc">top</a></h3>
+
+<p>The Video options panel helps set the default height and width for videos and only take effect if custom width and
+    height are not specified within the shortcode itself.</p>
+
+<p class="center"><img src="assets/images/14-video-options.png" alt="Video Option Panel"/></p>
+
+
+<hr/>
+
+
+<h3 id="shortcode-builder"><strong>Custom Post Types, Shortcodes and Shortcodes Builder</strong> - <a href="#toc">top</a></h3>
+
+<p><strong>Appdev</strong> supports a number of custom post types including the ones for pricing table, team members, 
+testimonials and portfolio items. They all come with an easy to use intuitive GUI for input of data and then shortcodes 
+for inserting these post types almost any where you like. </p>
+
+<p class="center"><img src="assets/images/40-custom-post-types.png" alt="Custom Post Types"/></p>
+
+<h3 id="pricing-custom-post-type">Pricing Custom Post Type</h3>
+
+<p>Once the data is input in the admin panel for pricing plans (see screenshot below), you may use the shortcode - </p>
+
+<p><strong>[pricing_plans post_count=4 pricing_ids=""]</strong></p>
+
+<p>where pricing_ids is a comma separated list of post ids for pricing custom post type. </p>
+
+<h3 id="testimonial-custom-post-type">Testimonials Custom Post Type</h3>
+
+<p>Once the data is input in the admin panel for testimonials, you may use the shortcode - </p>
+
+<p>[responsive_slider type="testimonials2" animation="slide" control_nav="true" direction_nav=false pause_on_hover="true" slideshow_speed=4500]</p>
+
+<p>[testimonials post_count=4 testimonial_ids="234,235,236"]</p>
+
+<p>[/responsive_slider]</p>
+
+<p>The testimonial shortcode need to be wrapped inside [responsive_slider] shortcode to enable slider function. By default, the [testimonials] and [testimonials2] shortcode
+displays a unordered list (UL element) of testimonial elements which can be styled differently if a slider is not desired. Separating out the slider part also helps control
+the slider properties like animation speed, slider controls, pause on hover etc. as explained in the documentation for [responsive_slider] shortcode.</p>
+
+<p>The testimonial_ids parameter is a comma separated list of post ids for testimonials custom post type. </p>
+
+<h3 id="team-custom-post-type">Team Custom Post Type</h3>
+
+<p>Once the data is input in the admin panel for team members, you may use the shortcode - </p>
+
+<p><strong>[team post_count=4 column_count=4 member_ids=""]</strong></p>
+
+<p>where member_ids is a comma separated list of post ids for team custom post type. </p>
+
+<p><strong>Appdev</strong> additionally comes with nearly 70 custom shortcodes that can be used inside your post or page content. The
+    <a href="http://www.portfoliotheme.org/appdev/">Appdev Live Preview</a> site has many pages listed for demo of
+    shortcodes with their corresponding code and is a good resource for familiarizing yourself with the the shortcodes
+    provided by <strong>Appdev</strong>. <b>Check for the demo shortcode pages under 'Pages' dropdown menu</b>. </p>
+
+<p>We have documented below a few shortcode whose usage is not apparent at first look or which have not been covered in
+    the preview site shortcode pages</p>
+
+<h3 id="segment-shortcode">The [segment] shortcode</h3>
+
+<p><strong>The [segment] shortcode applies only when developing pages using page sections. If using SiteOrigin Page Builder, ignore
+this shortcode and use the page builder Row element for function similar to what is provided by this shortcode.</strong></p>
+
+<p>Any full width or home page created in the Appdev theme is divided into multiple segments. The sample data bundled
+    with the theme has examples of many pages broken into multiple full width segments with the help of [segment]
+    shortcode. The <strong>[segment]</strong> shortcode is used across all home pages and many other full width pages in
+    Appdev. The Appdev theme provides unlimited flexibility when creating full width pages - pages that, by default,
+    span the entire browser/screen width instead of being limited to a 960px or 1140px grid ( typical of any blog
+    influenced WordPress template). The job of the [segment] shortcode is to help provide top and bottom 70px padding
+    between next and previous segment and constrain the segment content width to a 1140px grid while allowing you to set
+    image backgrounds, background patterns or colors that span the entire browser width. You are free to use a custom
+    markup of your choice if you do not want to use [segment] shortcode - like if you want the content to occupy the
+    browser width or if you want a wider/narrower layout.
+
+<p>
+
+<p>The [segment] shortcode creates a wrapper HTML element that can take background options and an inner content HTML div
+    element that houses the content constrained to 1140px grid. </p>
+
+<p><h4>Usage:</h4></p>
+
+<p>
+    <b>[segment id="client-testimonials1" class="dark-bg" background_color='#374a4e' style='padding:50px 0;'
+        background_image="http://example.com/background3.jpg" parallax_background="true" background_speed="0.4"]</b>
+</p>
+All parameter values are optional and they are are explained below -
+<p><strong>id</strong> - The id of the wrapper HTML element created by the segment shortcode.<br>
+    <strong>class</strong> - The CSS class of the HTML element wrapping the content.<br>
+    <strong>style</strong> - Any inline styling you would like to apply to the segment. You may want to override the
+    default top/bottom padding, provide custom markup for backgrounds etc.<br>
+    <strong>background_image</strong> - Provide the URL of the background image. See examples in the sample data
+    provided with the theme. The image supplied is not repeated and is scaled to occupy the entire segment width (same
+    as browser width).<br>
+    <strong>parallax_background</strong> - Specify if the background is a parallax one. By default, the parallax
+    background is set to true. On mobile devices and browser window size less than 1100px, the parallax effect is
+    disabled.<br>
+    <strong>background_speed</strong> - Speed at which the parallax background moves with user scrolling the page. The
+    default value assigned to this property is 0, which means the background acts like the one whose
+    background-attachment property is set to fixed and hence does not scroll at all. A value of 1 implies the background
+    scrolls with the page in equal increments ( same effect as background-attachment: scroll). To obtain best results,
+    experiment with multiple values to test the parallax effect.<br>
+    <strong>background_pattern</strong> - As an alternative to 'background_image' option above, you can provide the URL
+    of the background image which acts like a pattern. This image is repeated horizontally as well as vertically to help
+    occupy the entire segment width (same as browser width).<br>
+    <strong>background_color</strong> - The background color to be applied to the segment that spans the entire browser
+    width.<br>
+
+<h3>The [contact_form] shortcode</h3>
+
+<p>The [contact_form] shortcode is documented <a href="#contact-form">below</a> in a separate section. </p>
+
+<h3>Shortcodes Builder</h3>
+
+<p>You can easily use Shortcodes with the help of Shortcode Builder tool accessible from the WordPress post/page
+    editor.</p>
+
+<p class="center"><img src="assets/images/shortcode-builder-1.png" alt="Shortcode Builder"/></p>
+Simply select the shortcode you would like to use then click "<strong>Insert</strong>" button to insert the shortcode
+into the post editor.</p>
+
+<p class="center"><img src="assets/images/shortcode-builder-2.png" alt="Shortcode Builder"/></p>
+
+<p>Fill in the required details of shortcode attributes on the shortcode entered.
+
+<hr/>
+
+<h3 id="contact-form"><strong>Contact Form Shortcode</strong> - <a href="#toc">top</a></h3>
+
+<p>To add a contact form to your website, first create a blank page and then use Shortcode Builder to add Contact Form
+    shortcode listed under Social Shortcodes. Also see our live preview page for <a
+            href="https://www.livemeshthemes.com/appdev/contact-form-shortcode/">Contact Form shortcode</a></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>Example shortcode - <b>[contact_form class="contact-form" mail_to="john.doe@example.com" human_check=true phone=true
+    web_url=true subject=true]</b></p>
+
+<p class="center"><img src="assets/images/contact-form-shortcode.png" alt="Contact Form Shortcode"/></p>
+
+<p>Enter in the email address to which you want the email to be received. Once the theme is setup, test out the Contact
+    Form functionality. The <strong>Contact Form</strong> function utilizes <a
+            href="http://codex.wordpress.org/Function_Reference/wp_mail" target="_blank">wp_mail</a> function to send
+    emails. If emails are not being received, please make sure the contact email entered is the right one and then check
+    with your hosting provider to make sure SMTP and smtp_port have been setup right on your server. Or you can install
+    a Plugin like the <a href="http://wordpress.org/extend/plugins/configure-smtp/" target="_blank">Configure SMTP</a>
+    plugin for Wordpress to configure SMTP.</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>class</strong> - Custom CSS class name to be set for the div element created (optional)<br />
+    <strong>mail_to</strong> - A string field specifying the recipient email where all form submissions will be received.<br />
+    <strong>web_url</strong> - Can be true or false. A boolean indicating that the user should be requested for Web URL via an input field.<br />
+    <strong>phone</strong> - Can be true or false. Request for phone number of the user. A phone number field is displayed.<br />
+    <strong>subject</strong> - Can be true or false. A mail subject field is displayed if the value is set to true.<br />
+    <strong>human_check</strong> - Can be true or false. Displays a small validation box to verify if the information is not being entered by a spam bot.<br />
+    <strong>button_color</strong> - Color of the submit button. Available colors are black, blue, cyan, green, orange, pink, red, teal, theme and trans.</p>
+
+<hr/>
+
+<div class="page-header" id="typography-shortcodes"><h3>Typography Shortcodes</h3></div>
+
+<p><h3>Code Shortcode -</h3></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>Wraps the content in HTML tag pre with required class name to enable custom theme styling for source code.</p>
+
+<p>[code]</p>
+
+<p>[one_half]Content[/one_half]</p>
+
+<p>[one_half_last]Another content[/one_half_last]</p>
+
+<p>[/code]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>None</p>
+
+<p><h3>Pullquote Shortcodes -</h3></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[pullquote align="right"]Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.[/pullquote]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>align</strong> - Can be left, right, center or none. The default is none. (optional).<br />
+    <strong>author</strong> - A string indicating author information. (optional)</p>
+
+<p><h3>Blockquote Shortcode -</h3></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[blockquote align="right" author="Tom Bodett"]They say a person needs just three things to be truly happy in this world: someone to love, something to do, and something to hope for.[/blockquote]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>align</strong> - Can be left, right, center or none. The default is none. (optional).<br />
+    <strong>id</strong> - The element id to be set for the blockquote element created (optional).<br />
+    <strong>style</strong> - Inline CSS styling applied for the blockquote element created (optional)<br />
+    <strong>class</strong> - Custom CSS class name to be set for the blockquote element created (optional)<br />
+    <strong>author</strong> - A string value indicating the author of the quote.<br />
+    <strong>affiliation</strong> - The entity to which the author of the quote belongs to.<br />
+    <strong>affiliation_url</strong> - The URL of the entity to which this quote is attributed to.</p>
+
+<p><h3>Highlight Shortcodes -</h3></p>
+
+<p>Highlights the text wrapped by the shortcode. Useful for highlighting text. Has two variations - highlight1 and highlight2.<br />
+<h4>Usage:</h4></p>
+
+<p>[highlight1]Lorem ipsum dolor sit amet, consetetur[/highlight1]<br />
+    [highlight2]Lorem ipsum dolor sit amet, consetetur[/highlight2]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>None</p>
+
+<p><h3>List Shortcode -</h3></p>
+
+<p>A shortcode to create a styled unordered list element UL.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[list]</p>
+&lt;ul&gt;
+<p>&lt;li&gt;Item 1&lt;/li&gt;<br />
+    &lt;li&gt;Item 2&lt;/li&gt;</p>
+&lt;/ul&gt;
+<p>[/list]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>style</strong> - Inline CSS styling applied for the UL element created (optional)<br />
+    <strong>type</strong> - Custom CSS class name to be set for the UL element created (optional). Possible values are from list1, list2, list3 to list10. Default is list1.<br />
+
+<h3>Heading Shortcodes -</h3><br />
+Heading shortcodes are used across all pages in the theme as introductory texts/titles to the page sections.<br />
+<h4>Usage:</h4><br />
+[heading2<br />
+title="Connect with us on our &lt;strong&gt;blog&lt;/strong&gt;"<br />
+pitch="Lorem ipsum dolor sit amet, consectetuer elit. Aenean leo ligula, porttitor eu, consequat vitae. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"]<br />
+<h4>Parameters -</h4><br />
+<p><strong>style</strong> - Inline CSS styling applied for the div element created (optional)<br />
+<strong>title</strong> - A string value indicating the title of the heading.<br />
+<strong>pitch</strong> - The text displayed below the heading title.<br />
+<strong>separator</strong> - boolean (false) - Specify if a separator needs to be inserted between the title and the pitch text (optional)<br /></p>
+
+<h3>Wrap Shortcodes -</h3></p>
+
+<p>This shortcode is used to create a DIV wrapper elements for other shortcodes.</p>
+
+<p>Helps to display these elements in the visual editor of WordPress. The regular DIV elements entered in the HTML tab are not visible in the visual editor which leads to mistakes and lost/malformed elements.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[ancestor_wrap class="marketing-ancestor"]</p>
+
+<p>[parent_wrap id="marketing-parent"]</p>
+
+<p>[wrap class="marketing-section"]</p>
+
+<p>[one_half]Content[/one_half]</p>
+
+<p>[one_half_last]Another content[/one_half_last]</p>
+
+<p>[/wrap]</p>
+
+<p>[/parent_wrap]</p>
+
+<p>[/ancestor_wrap]</p>
+
+<p>Each of the wrapper shortcodes accept the following parameters</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>id</strong> - The element id to be set for the DIV element created (optional).<br />
+    <strong>style</strong> - Inline CSS styling applied for the DIV element created (optional)<br />
+    <strong>class</strong> - Custom CSS class name to be set for the DIV element created (optional)</p>
+
+<p><h3>Icon Shortcode -</h3></p>
+
+<p>Shortcode to display one of the font icons, chosen from the list of icons listed
+    at <a href="https://www.livemeshthemes.com/faqs/how-to-use-500-icon-fonts-bundled-with-the-theme/">https://www.livemeshthemes.com/faqs/how-to-use-500-icon-fonts-bundled-with-the-theme/</a></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[icon class="icon-cart" style="font-size:32px;"]<br />
+    [icon class="icon-thumbnails" style="font-size:48px;"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>style</strong> - Inline CSS styling applied for the icon element created (optional). Useful if you want to specify font-size, color etc. for the icon inline.<br />
+    <strong>class</strong> - Custom CSS class name to be set for the icon element created (optional)</p>
+
+<p><h3>Action Call Shortcode -</h3></p>
+
+<p>Useful to create action call segments which typically display a text urging the user to take action and a button which leads to the action.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[action_call text="Ready to get started &lt;strong&gt;on your project?&lt;/strong&gt;&lt;/h3&gt;" button_url="http://themeforest.net/user/LiveMesh" button_text="Purchase Now"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>text</strong> - Text to be displayed urging for an action call.<br />
+    <strong>button_text</strong> - The title to be displayed for the button.<br />
+    <strong>button_color</strong> - The color of the button. Available colors are black, blue, cyan, green, orange, pink, red, teal, theme and trans.<br />
+    <strong>button_url</strong> - The URL to which the button links to. The user navigates to this URL when the button is clicked.</p>
+
+<hr/>
+
+<div class="page-header" id="column-shortcodes"><h3>Column Shortcodes</h3></div>
+
+<p><strong>Usage:</strong></p>
+
+<p>Pls refer to <a href="https://www.livemeshthemes.com/appdev/column-shortcodes/">https://www.livemeshthemes.com/appdev/column-shortcodes/</a></p>
+
+<p>[six_col]One Half[six_col]<br>
+    [six_col_last]Second Half[six_col_last]</p>
+
+<p>[four_col]One Third[/four_col]<br>
+    [four_col]One Third[/four_col]<br>
+    [four_col_last]One Third Last[/four_col_last]</p>
+
+<p>[four_col]One Third[/four_col]<br>
+    [eight_col_last]Two Third Last[/eight_col_last]</p>
+
+<p>[three_col]One Fourth[/three_col]<br>
+    [three_col]One Fourth[/three_col]<br>
+    [three_col]One Fourth[/three_col]<br>
+    [three_col_last]One Fourth Last[/three_col_last]</p>
+
+<p>[three_col]One Fourth[/three_col]<br>
+    [nine_col_last]Three Fourth Last[/nine_col_last]</p>
+
+<p>[two_col]One Sixth[/two_col]<br>
+    [two_col]One Sixth[/two_col]<br>
+    [two_col]One Sixth[/two_col]<br>
+    [two_col]One Sixth[/two_col]<br>
+    [two_col]One Sixth[/two_col]<br>
+    [two_col_last]One Sixth Last[/two_col_last]</p>
+
+<p>[two_col]One Sixth[/two_col]<br>
+    [ten_col_last]Five Sixth Last[/ten_col_last]</p>
+
+<p><strong>Parameters -</strong></p>
+
+<p><strong>id</strong> - The element id to be set for the div element created (optional).<br>
+    <strong>style</strong> - Inline CSS styling applied for the div element created (optional)<br>
+    <strong>class</strong> - Custom CSS class name to be set for the div element created (optional)</p>
+
+
+<div class="page-header" id="media-shortcodes"><h3>Button Shortcodes</h3></div>
+
+<p><h4>Usage:</h4>
+
+[button id="purchase-button" style="padding: 10px 20px;" color="green" type="rounded" size="large" href="http://targeturl.com" align="left" target="_blank"]Green Button[/button]<br />
+</p>
+<h4>Parameters -</h4>
+<strong>id</strong> - The button DIV element id (optional).<br />
+<strong>style</strong> - Inline CSS styling (optional)<br />
+<strong>class</strong> - Custom CSS class name (optional)<br />
+<strong>color</strong> - Color of the button. Available colors are <strong>black, blue, cyan, green, orange, pink, red, teal, theme and trans.</strong><br />
+<strong>align</strong> - Alignment of the button and text alignment of the button title displayed.<br />
+<strong>type</strong> - Can be large, small or rounded.<br />
+<strong>href</strong> - The URL to which button should point to. The user is taken to this destination when the button is clicked.<br />
+<strong>target</strong> - The HTML anchor target. Can be _self (default) or _blank which opens a new window to the URL specified when the button is clicked.</p>
+
+<hr/>
+
+<div class="page-header" id="image-shortcodes"><h3>Media Shortcodes</h3></div>
+
+<p><h3>Image Shortcode -</h3></p>
+
+<p>Displays an image with the optional attributes.<br />
+<h4>Usage:</h4><br />
+See examples at <a href="https://www.livemeshthemes.com/appdev/image-shortcodes/">https://www.livemeshthemes.com/appdev/image-shortcodes/</a></p>
+
+<p>[image link="true" title="Visit Mountain Lion Page" src="http://example.com/lion.jpg" alt="Mountain Lion" align="left" image_frame="true" wrapper="true" wrapper_class="image-bordered" wrapper_style="margin-top: 20px;" width="320" height="240"]</p>
+
+<p>[image link="true" title="Visit Mountain Lion Page" src="http://example.com/lion.jpg" alt="Mountain Lion" align="left" image_frame="true" wrapper="true" wrapper_class="image-bordered" size="large"]<br />
+<h4>Parameters -</h4><br />
+<strong>link</strong> - Specify if the image should be a link.<br />
+<strong>title</strong> - The title of the link to which image points to.<br />
+<strong>type</strong> - The CSS class of the IMG element created.<br />
+<strong>src</strong> - The URL of the image. An IMG element will be created for this image and the image will be cropped and styled as per the parameters provided.<br />
+<strong>alt</strong> - The alt text for the image.<br />
+<strong>align</strong> - The alignment - left, right, center or none for the image element.<br />
+<strong>image_frame</strong> - A boolean value specifying if the image should be wrapped in a frame and this frame can be styled by the theme.<br />
+<strong>wrapper</strong> - A boolean value indicating if the a wrapper DIV element needs to be created for the image.<br />
+<strong>wrapper_class</strong> - The CSS class for any wrapper DIV element created for the image.<br />
+<strong>wrapper_style</strong> - The inline CSS styling for any wrapper DIV element created for the image.<br />
+<strong>width</strong> - Any custom width specified for the element. The original image (pointed to by the src parameter) will be cropped to this width.<br />
+<strong>height</strong> - Any custom height specified for the element. The original image (pointed to by the src parameter) will be cropped to this height.<br />
+<strong>size</strong> - Takes effect if no custom width or height is specified. Can be mini, small, medium, large, full, square. The original image (pointed to by the src parameter) is cropped to the size specified.</p>
+
+<p><h3>HTML5 Audio Shortcode -</h3></p>
+
+<p>Displays a HTML5 audio clip with controls.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[html5_audio ogg_url="http://mydomain.com/song.ogg" mp3_url="http://mydomain.com/song.mp3" ]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>ogg_url</strong> - The URL of the audio clip uploaded in OGG format.<br />
+    <strong>mp3_url</strong> - The URL of the audio clip uploaded in MP3 format.</p>
+
+<hr/>
+
+<div class="page-header" id="custom-posts-shortcodes"><h2>Custom Post Types - Pricing, Testimonials and Team Shortcodes</h2></div>
+
+<p><strong>Appdev</strong> supports a number of custom post types including the ones for pricing table, team members,
+    testimonials and portfolio items. They all come with an easy to use intuitive GUI for input of data and then shortcodes
+    for inserting these post types almost any where you like. </p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/40-custom-post-types.png" alt="Custom Post Types"/></p>
+
+<h3 id="pricing-custom-post-type">Pricing Custom Post Type</h3>
+
+<p>Once the data is input in the admin panel for pricing plans (see screenshot below), you may use the shortcode below to
+    display the pricing table with the columns drawn from the pricing information provided by creating a custom post type named pricing.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[pricing_plans post_count=4 pricing_ids="234,235,236"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_count</strong> - The number of pricing columns to be displayed. By default displays all of the custom posts entered as pricing
+    in the Pricing Plan tab of WordPress admin (optional).<br />
+    <strong>pricing_ids</strong> - A comma separated post ids of the pricing custom post types created in the Pricing Plan tab of WordPress
+    admin. Helps to filter the pricing plans for display (optional).</p>
+
+
+<h3 id="testimonial-custom-post-type">Testimonials Custom Post Type</h3>
+
+<p>Once the data is input for testimonials by creating Testimonial custom post types in the Testimonials tab of the WordPress Admin, you may
+    use the shortcode below to display a slider of testimonials. These
+    testimonials are entered by .</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[responsive_slider type="testimonials2" animation="slide" control_nav="true" direction_nav=false pause_on_hover="true" slideshow_speed=4500]</p>
+
+<p>[testimonials post_count=4 testimonial_ids="234,235,236"]</p>
+
+<p>[/responsive_slider]</p>
+
+<p>The testimonial shortcode need to be wrapped inside [responsive_slider] shortcode to enable slider function. By default, the [testimonials] and [testimonials2] shortcode
+displays a unordered list (UL element) of testimonial elements which can be styled differently if a slider is not desired. Separating out the slider part also helps control
+the slider properties like animation speed, slider controls, pause on hover etc. as explained in the documentation for [responsive_slider] shortcode.</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_count</strong> - The number of testimonials to be displayed. By default displays all of the custom posts entered as testimonial in the Testimonials tab of the WordPress Admin (optional).<br />
+    <strong>testimonial_ids</strong> - A comma separated post ids of the Testimonial custom post types created in the Testimonials tab of the WordPress Admin. Helps to filter the testimonials for display (optional).</p>
+
+<h3 id="team-custom-post-type">Team Custom Post Type</h3>
+
+<p>Once the data is input in the admin panel for team members for creating Team custom post types in the Team Profiles tab of the WordPress Admin, you may use the [team] shortcode to display a list of team members entered.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[team post_count=6 column_count=3 member_ids="123,234,456,876,654,321"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_count</strong> - Number of team members to display if the query returns more than the specified number (optional).<br />
+    <strong>column_count</strong> - The number of columns for each row of team members shown.<br />
+    <strong>member_ids</strong> - The custom post ids of the member profiles to be displayed. (optional).</p>
+
+<hr/>
+
+<div class="page-header" id="posts-shortcodes"><h3>Blog Posts Shortcodes</h3></div>
+
+<p><h3>Recent Posts Shortcode -</h3></p>
+
+<p>Displays the most recent blog posts sorted by date of posting.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[recent_posts post_count=5 hide_thumbnail="false" show_meta="false" excerpt_count=70 image_size="small"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_count</strong> - 5 (number) - Number of posts to display<br />
+    <strong>hide_thumbnail</strong> false (boolean) - Display thumbnail or hide the same.<br />
+    <strong>show_meta</strong> - false (boolean) Display meta information like the author, date of publishing and number of comments.<br />
+    <strong>excerpt_count</strong> - 50 (number) The total number of characters of excerpt to display.<br />
+    <strong>image_size</strong> - small (string) - Can be mini, small, medium, large, full, square.</p>
+
+<p><h3>Popular Posts Shortcode -</h3></p>
+
+<p>Displays the most popular blog posts. Popularity is based on by number of comments posted on the blog post. The higher the number of comments, the more popular the blog post.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[popular_posts post_count=5 hide_thumbnail="false" show_meta="false" excerpt_count=70 image_size="small"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_count</strong> - 5 (number) - Number of posts to display<br />
+    <strong>hide_thumbnail</strong> false (boolean) - Display thumbnail or hide the same.<br />
+    <strong>show_meta</strong> - false (boolean) Display meta information like the author, date of publishing and number of comments.<br />
+    <strong>excerpt_count</strong> - 50 (number) The total number of characters of excerpt to display.<br />
+    <strong>image_size</strong> - small (string) - Can be mini, small, medium, large, full, square.</p>
+
+<p><h3>Category Posts Shortcode -</h3></p>
+
+<p>Displays the blog posts belonging to one or more categories.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[category_posts category_slugs="nature,lifestyle" post_count=5 hide_thumbnail="false" show_meta="false" excerpt_count=70 image_size="small"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>category_slugs</strong> - (string) The comma separated list of category slugs whose posts need to be displayed.<br />
+    <strong>post_count</strong> - 5 (number) - Number of posts to display<br />
+    <strong>hide_thumbnail</strong> false (boolean) - Display thumbnail or hide the same.<br />
+    <strong>show_meta</strong> - false (boolean) Display meta information like the author, date of publishing and number of comments.<br />
+    <strong>excerpt_count</strong> - 50 (number) The total number of characters of excerpt to display.<br />
+    <strong>image_size</strong> - small (string) - Can be mini, small, medium, large, full, square.</p>
+
+<p><h3>Tag Posts Shortcode -</h3></p>
+
+<p>Displays the blog posts with one or more tags specified as a parameter to the shortcode.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[tag_posts tag_slugs="growth,motivation" post_count=5 hide_thumbnail="false" show_meta="false" excerpt_count=70 image_size="small"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>tag_slugs</strong> - (string) The comma separated list of tag slugs whose posts need to be displayed.<br />
+    <strong>post_count</strong> - 5 (number) - Number of posts to display<br />
+    <strong>hide_thumbnail</strong> false (boolean) - Display thumbnail or hide the same.<br />
+    <strong>show_meta</strong> - false (boolean) Display meta information like the author, date of publishing and number of comments.<br />
+    <strong>excerpt_count</strong> - 50 (number) The total number of characters of excerpt to display.<br />
+    <strong>image_size</strong> - small (string) - Can be mini, small, medium, large, full, square.</p>
+
+<p><h3>Custom Post Types Shortcode -</h3></p>
+
+<p>Displays the posts of one or more custom post types.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[show_custom_post_types post_types="portfolio,post" post_count=5 hide_thumbnail="false" show_meta="false" excerpt_count=70 image_size="small"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_types</strong> - post (string) The comma separated list of post types whose posts need to be displayed.<br />
+    <strong>post_count</strong> - 5 (number) - Number of posts to display<br />
+    <strong>hide_thumbnail</strong> false (boolean) - Display thumbnail or hide the same.<br />
+    <strong>show_meta</strong> - false (boolean) Display meta information like the author, date of publishing and number of comments.<br />
+    <strong>excerpt_count</strong> - 50 (number) The total number of characters of excerpt to display.<br />
+    <strong>image_size</strong> - small (string) - Can be mini, small, medium, large, full, square.</p>
+
+<hr/>
+
+<div class="page-header" id="portfolio-shortcodes"><h3>Portfolio Shortcodes</h3></div>
+
+<p><h3>Post Snippets Shortcode -</h3></p>
+
+<p>See <a href="https://www.livemeshthemes.com/appdev/portfolio-shortcodes/" title="Portfolio Shortcodes">https://www.livemeshthemes.com/appdev/portfolio-shortcodes/</a> ‎for examples.</p>
+
+<p>Displays the post snippets of blog posts or another custom post types with featured images. The post snippets are displayed in a grid fashion like a typical portfolio page or grid based blog page.</p>
+
+<p>The number_of_columns parameter helps decide on the number of columns of posts/custom post types to display for each row displayed. Total number of posts displayed is derived from post_count parameter value.</p>
+
+<p>This shortcode is quite powerful when used with custom post types and with filters based on custom taxonomy/terms specified as arguments.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[show_post_snippets layout_class="rounded-images" post_type="portfolio" number_of_columns=3 post_count=6 image_size='medium' excerpt_count=100 display_title="true" display_summary="true" show_excerpt="true" hide_thumbnail="false"]</p>
+
+<p>With taxonomy and terms specified, the portfolio items can be drawn from a specific portfolio category as shown below.</p>
+
+<p>[show_post_snippets number_of_columns=3 post_count=6 image_size='large' terms="inspiration,technology" taxonamy="portfolio_category" post_type="portfolio"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_type</strong> - (string) The custom post type whose posts need to be displayed. Examples include post, portfolio, team etc.<br />
+    <strong>post_count</strong> - 4 (number) - Number of posts to display<br />
+    <strong>image_size</strong> - medium (string) - Can be mini, small, medium, large, full, square.<br />
+    <strong>title</strong> - (string) Display a header title for the post snippets.<br />
+    <strong>layout_class</strong> - (string) The CSS class to be set for the list element (UL) displaying the post snippets. Useful if you need to do some custom styling of our own (rounded, hexagon images etc.) for the displayed items.<br />
+    <strong>number_of_columns</strong> - 4 (number) - The number of columns to display per row of the post snippets<br />
+    <strong>display_title</strong> - false (boolean) - Specify if the title of the post or custom post type needs to be displayed below the featured image<br />
+    <strong>display_summary</strong> - false (boolean) - Specify if the excerpt or summary content of the post/custom post type needs to be displayed below the featured image thumbnail.<br />
+    <strong>show_excerpt</strong> - true (boolean) - Display excerpt for the post/custom post type. Has no effect if display_summary is set to false. If show_excerpt is set to false and display_summary is set to true, the content of the post is displayed truncated by the WordPress tag. If more tag is not specified, the entire post content is displayed.<br />
+    <strong>excerpt_count</strong> - 100 (number) - Applicable only to excerpts. The excerpt displayed is truncated to the number of characters specified with this parameter.<br />
+    <strong>hide_thumbnail</strong> false (boolean) - Display thumbnail image or hide the same.<br />
+    <strong>show_meta</strong> - false (boolean) Display meta information like the author, date of publishing and number of comments.<br />
+    <strong>excerpt_count</strong> - 100 (number) The total number of characters of excerpt to display.<br />
+    <strong>taxonamy</strong> - (string) Custom taxonomy to be used for filtering the posts/custom post types displayed.<br />
+    <strong>terms</strong> - (string) The terms of taxonomy specified.<br />
+
+<p><h3>Rounded Post Snippets Shortcode -</h3></p>
+
+<p>Displays rounded post thumbnails for portfolio or blog items with featured image set for them.</p>
+
+<p>See <a href="https://www.livemeshthemes.com/appdev/portfolio-shortcodes/" title="Portfolio Shortcodes">https://www.livemeshthemes.com/appdev/portfolio-shortcodes/</a> ‎for examples.</p>
+
+<p>Displays the post snippets of blog posts or another custom post types with featured images. The post snippets are displayed in a grid fashion like a typical portfolio page or grid based blog page.</p>
+
+<p>The number_of_columns parameter helps decide on the number of columns of posts/custom post types to display for each row displayed. Total number of posts displayed is derived from post_count parameter value.</p>
+
+<p>This shortcode is quite powerful when used with custom post types and with filters based on custom taxonomy/terms specified as arguments.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[show_post_snippets layout_class="rounded-images" post_type="portfolio" number_of_columns=3 post_count=6 image_size='medium' excerpt_count=100 display_title="true" display_summary="true" show_excerpt="true" hide_thumbnail="false"]</p>
+
+<p>With taxonomy and terms specified, the portfolio items can be drawn from a specific portfolio category as shown below.</p>
+
+<p>[show_rounded_post_snippets number_of_columns=3 post_count=6 terms="inspiration,technology" taxonamy="portfolio_category" post_type="portfolio"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_type</strong> - (string) The custom post type whose posts need to be displayed. Examples include post, portfolio, team etc.<br />
+    <strong>post_count</strong> - 4 (number) - Number of posts to display<br />
+    <strong>title</strong> - (string) Display a header title for the post snippets.<br />
+    <strong>number_of_columns</strong> - 4 (number) - The number of columns to display per row of the post snippets<br />
+    <strong>taxonamy</strong> - (string) Custom taxonomy to be used for filtering the posts/custom post types displayed.<br />
+    <strong>terms</strong> - (string) The terms of taxonomy specified.<br />
+
+<p><h3>Show Portfolio shortcode -</h3></p>
+
+<p>Helps to display a portfolio page style display of portfolio items with JS powered portfolio category filter. Packed layout option is also available.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[show_portfolio number_of_columns=4 post_count=12 image_size='small' filterable=true]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>post_count</strong> - 9 (number) - Total number of portfolio items to display<br />
+    <strong>number_of_columns</strong> - 3 (number) - The number of columns to display per row of the portfolio items<br />
+    <strong>image_size</strong> - medium (string) - Can be mini, small, medium, large, full, square.<br />
+    <strong>filterable</strong> - true (boolean) The portfolio items will be filterable based on portfolio categories if set to true.<br />
+</p>
+<hr/>
+
+<div class="page-header" id="slider-shortcodes"><h3>Slider Shortcodes</h3></div>
+
+<p><h3>Responsive Slider Shortcode -</h3></p>
+
+<p>Use this shortcode to create a slider out of any HTML content. All it requires a UL element with children to show.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[responsive_slider type="testimonials2" animation="slide" control_nav="true" direction_nav=false pause_on_hover="true" slideshow_speed=4500]</p>
+
+<p>&lt;ul&gt;<br />
+    &lt;li&gt;Slide 1 content goes here.&lt;/li&gt;<br />
+    &lt;li&gt;Slide 2 content goes here.&lt;/li&gt;<br />
+    &lt;li&gt;Slide 3 content goes here.&lt;/li&gt;<br />
+    &lt;/ul&gt;</p>
+
+<p>[/responsive_slider]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>type</strong> (string) - Constructs and sets a unique CSS class for the slider. <strong>(optional).</strong><br />
+    <strong>slideshow_speed</strong> - 5000 (number). Set the speed of the slideshow cycling, in <strong>milliseconds</strong><br />
+    <strong>animation_speed</strong> - 600 (number). Set the speed of animations, in <strong>milliseconds.</strong><br />
+    <strong>animation</strong> - fade (string). Select your animation type, "fade" or <strong>"slide".</strong><br />
+    <strong>pause_on_action</strong> - true (boolean). Pause the slideshow when interacting with control elements, highly <strong>recommended.</strong><br />
+    <strong>pause_on_hover</strong> - true (boolean). Pause the slideshow when hovering over slider, then resume when no longer <strong>hovering.</strong><br />
+    <strong>direction_nav</strong> - true (boolean). Create navigation for previous/next navigation? <strong>(true/false)</strong><br />
+    <strong>control_nav</strong> - true (boolean). Create navigation for paging control of each slide? Note: Leave true for manual_controls <strong>usage.</strong><br />
+    <strong>easing</strong> - swing (string). Determines the easing method used in jQuery transitions. jQuery easing plugin is <strong>supported!</strong><br />
+    <strong>loop</strong> - true (boolean). Should the animation <strong>loop?</strong><br />
+    <strong>slideshow</strong> - true (boolean). Animate slider automatically without user intervention.<br />
+    <strong>style</strong> - (string) - The inline CSS applied to the slider container DIV element.</p>
+
+<h3>Device Slider Shortcode -</h3><br />
+Use this shortcode to create a image slider part of a container that looks like a smartphone. Possible sliders are</p>
+
+<p><strong>[smartphone_slider], [iphone_slider], [galaxys4_slider], [htcone_slider].</strong></p>
+
+<p>The image URLs are provided via a comma separated list of URLs pointing to the images.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[smartphone_slider<br />
+    device="nexus6p"<br />
+    animation="fade"<br />
+    direction_nav=true<br />
+    control_nav=false<br />
+    slideshow_speed=4000<br />
+    animation_speed=600<br />
+    pause_on_action=true<br />
+    pause_on_hover=true<br />
+    easing="swing"<br />
+    style="margin-bottom:20px;"<br />
+    image_urls="https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide3.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide1.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide2.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide4.jpg"]</p>
+
+<p>[galaxys4_slider<br />
+    animation="fade"<br />
+    image_urls="https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide3.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide1.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide2.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide4.jpg"]</p>
+
+<p>[htcone_slider<br />
+    animation="fade"<br />
+    image_urls="https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide3.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide1.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide2.jpg,https://www.livemeshthemes.com/agile/wp-content/uploads/2014/03/web-slide4.jpg"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>style</strong> - (string) - The inline CSS applied to the slider container DIV <strong>element.</strong><br />
+    <strong>device</strong> - iphone (string) - The device type - valid values are <strong>iphone, iphone7rosegold, iphone7gold, iphone7silver, iphone7black, iphone7jetblack, googlepixelsilver, googlepixelblue, googlepixelblack, nexus6p, galaxys7, galaxys4, htcone.</strong><br />
+    <strong>slideshow_speed</strong> - 5000 (number). Set the speed of the slideshow cycling, in <strong>milliseconds</strong><br />
+    <strong>animation_speed</strong> - 600 (number). Set the speed of animations, in <strong>milliseconds.</strong><br />
+    <strong>animation</strong> - fade (string). Select your animation type, "fade" or <strong>"slide".</strong><br />
+    <strong>pause_on_action</strong> - true (boolean). Pause the slideshow when interacting with control elements, highly <strong>recommended.</strong><br />
+    <strong>pause_on_hover</strong> - true (boolean). Pause the slideshow when hovering over slider, then resume when no longer <strong>hovering.</strong><br />
+    <strong>direction_nav</strong> - true (boolean). Create navigation for previous/next navigation? <strong>(true/false)</strong><br />
+    <strong>control_nav</strong> - true (boolean). Create navigation for paging control of each slide? Note: Leave true for manual_controls <strong>usage.</strong><br />
+    <strong>easing</strong> - swing (string). Determines the easing method used in jQuery transitions. jQuery easing plugin is <strong>supported!</strong><br />
+    <strong>loop</strong> - true (boolean). Should the animation <strong>loop?</strong><br />
+    <strong>image_urls</strong> (string) - Comma separated list of URLs pointing to the <strong>images.</strong></p>
+
+<hr/>
+
+<div class="page-header" id="social-shortcodes"><h3>Social Shortcodes</h3></div>
+
+<p><h3>Social List Shortcode -</h3></p>
+
+<p>Displays a list of social icons with links to various social network pages.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[social_list googleplus_url="http://plus.google.com" facebook_url="http://www.facebook.com" twitter_url="http://www.twitter.com" youtube_url="http://www.youtube.com/" linkedin_url="http://www.linkedin.com" include_rss="true"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>email</strong> - The email address to be used.<br />
+    <strong>facebook_url</strong> - The URL of the Facebook page.<br />
+    <strong>twitter_url</strong> - The URL of the Twitter account.<br />
+    <strong>flickr_url</strong> - The URL of the Flickr page.<br />
+    <strong>youtube_url</strong> - The URL for the YoutTube channel.<br />
+    <strong>linkedin_url</strong> - The URL for the LinkedIn profile.<br />
+    <strong>googleplus_url</strong> - The URL for the Google Plus page.<br />
+    <strong>include_rss</strong> - A boolean value(true/false string) indicating that the link to the RSS feed be included. Default is false.<br />
+    <strong>align</strong> - Can be left, right, center or none. The default is left. (optional).</p>
+
+<p><h3>Paypal Donate Shortcode -</h3></p>
+
+<p>Lets you display a Paypal donate button wherever you need - inside a post or a page.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[donate title="Please Donate to John Smith Foundation" account="email@example.com" display_card_logos="true" cause="Earthquake Relief"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>title</strong> - The title of the link that displays the Paypal donate button.<br />
+    <strong>account</strong> - The Paypal account for which the donate button is being created.<br />
+    <strong>display_card_logos</strong> - A boolean value to specify display of the logo images of the credit cards accepted for Paypal donations<br />
+    <strong>cause</strong> - The text indicating the purpose for which the donation is being collected.</p>
+
+<p><h3>Subscribe RSS Shortcode -</h3></p>
+
+<p>Displays a box that lets users invite users to subscribe to the RSS feed for the blog.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[subscribe_rss]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>None</p>
+
+<hr/>
+
+<div class="page-header" id="tabs-shortcodes"><h3>Tabs Shortcodes</h3></div>
+
+<p><h3>Tab Group Shortcode -</h3><br />
+Creates a list of tabs by converting a group of shortcodes indicating tab title and tab content.</p>
+
+<p>Each tab is displayed with a title and content.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[tabgroup]<br />
+    [tab title="Tab 1"]Tab 1 content goes here.[/tab]<br />
+    [tab title="Tab 2"]Tab 2 content goes here.[/tab]<br />
+    [tab title="Tab 3"]Tab 3 content goes here.[/tab]<br />
+    [/tabgroup]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>title</strong> - The title of the tab. The content of the tab is derived from content wrapped by the shortcode.</p>
+
+<p><h3>Toggle Shortcode -</h3></p>
+
+<p>Displays a toggle box with content hidden. The content is shown when the toggle is clicked.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[toggle type="first" title="Toggle 1"]Toggle 1 content goes here.[/toggle]<br />
+    [toggle title="Toggle 2"]Toggle 2 content goes here.[/toggle]<br />
+    [toggle title="Toggle 3"]Toggle 3 content goes here.[/toggle]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>type</strong> - CSS class name to be assigned to the toggle DIV element created.<br />
+    <strong>title</strong> - The title of the toggle.</p>
+
+<hr>
+<p><h3>Box Shortcodes -</h3></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[success title = 'Congrats!']Your success message[/success]</p>
+
+<p>[success]Your success message without title[/success]</p>
+
+<p>[info]Your info message without title[/info]</p>
+
+<p>[attention]An attention message without title[/attention]</p>
+
+<p>[warning]Your warning message without title[/warning]</p>
+
+<p>[tip]Your tip message without title[/tip]</p>
+
+<p>[info]Your info message without title[/info]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>style - Inline CSS styling (optional)<br />
+    title - Title displayed above the text in bold.</p>
+
+<p><h3>Box Frame Shortcode -</h3></p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[box_frame style="background: #FFF;" width="275px" type="pricing-box" align="center" title="Pet Care" inner_style="padding:20px;"]<br />
+    Any HTML content goes here - images, lists, text paragraphs, even sliders.<br />
+    [/box_frame]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>style - Inline CSS styling (optional)<br />
+    type - Class name to be assigned for the box div element. Useful for custom styling.<br />
+    align - Can be aligned left, right or centered.<br />
+    title - Title for the box in bold.<br />
+    width - Custom width of the box. Include px suffix.<br />
+    inner_style - Inline CSS styling for the inner box (optional)</p>
+
+<hr>
+
+<p><h3>Divider Shortcodes -</h3></p>
+
+<p>Draws a line or a divider of various kinds depending on the shortcode used.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[divider]<br />
+    [divider_line]<br />
+    [divider_space]<br />
+    [divider_fancy]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>style</strong> - Inline CSS styling applied for the div element created (optional)<br />
+
+<p><h3>Divider Top Shortcode -</h3></p>
+
+<p>Draws a line or a divider with a Back to Top link on the right. The user is smooth scrolled to the top of the page upon clicking the Back to Top link.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[divider_top]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>None</p>
+
+<p><h3>Clear Shortcode -</h3></p>
+
+<p>Create a DIV element aimed at clearing the layout. Useful to avoid elements wrapping around when using floats.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[clear]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p>None</p>
+
+<p><h3>Header Fancy Shortcode -</h3></p>
+
+<p>Draws a nice looking header with a title displayed in the center and with a line dividing the content.</p>
+
+<p><h4>Usage:</h4></p>
+
+<p>[header_fancy class="header1" style="margin-bottom: 20px;" text="Smartphone Section"]</p>
+
+<p><h4>Parameters -</h4></p>
+
+<p><strong>id</strong> - The id to be set for the div element created for custom styling <strong>(optional).</strong><br />
+    <strong>style</strong> - Inline CSS styling applied for the div element created <strong>(optional)</strong><br />
+    <strong>text</strong> - The text to be displayed in the center of the header.</p>
+
+
+<hr/>
+
+<h3 id="widgets-sidebars"><strong>Custom Widgets and Sidebars</strong> - <a href="#toc">top</a></h3>
+<strong>Appdev</strong> comes with 9 custom widgets:
+<ol>
+    <li><i>Flickr</i>: Displays thumbnails from the Flickr ID specified.</li>
+    <li><i>Social Icon</i>: Displays the social media icons .</li>
+    <li><i>Contact Form</i>: Displays a contact form.</li>
+    <li><i>Contact Info</i>: Displays a contact information.</li>
+    <li><i>Popular Posts</i>: Displays the popular posts on your site.</li>
+    <li><i>Recent Posts</i>: Displays the popular posts on your site.</li>
+</ol>
+<p>Simply drag one of your theme's custom widgets to a sidebar and enter the appropriate settings if needed. Appdev also
+    has several sidebars as shown in the image below.</p>
+
+<p><i>Twitter Widget</i>: To display tweets, the theme recommends you install the 'Recent Tweets' plugin or use the
+    default widget provided by Twitter itself.
+    Detailed instructions on how to use this widget is <a
+            href="https://www.livemeshthemes.com/forums/topic/twitter-widget-has-stopped-working-2/"
+            title="Twitter widget setup">here</a></p>
+
+<p><i>Instagram Widget</i>: To display your Instagram feeds, the theme recommends you install the 'Brankic Photostream
+    Widget' plugin to display photos from Flickr, Pinterest, Dribbble or Instagram.</p>
+
+<p class="center"><img src="assets/images/34-appdev-sidebars.png" alt="Custom Widgets and Sidebars"/></p>
+
+<hr/>
+
+<h3 id="page-templates"><strong>Template Pages</strong> - <a href="#toc">top</a></h3>
+
+<p><strong>Appdev</strong> comes with 15 WordPress template pages that you can select when you edit/publish a page from
+    the “Edit Page” “<strong>Attributes</strong>” settings box as seen below:</p>
+
+<p class="center"><img src="assets/images/31-portfolio-templates.png" alt="Custom Page Templates"/></p>
+Some of the important ones are:
+<ol>
+    <li><strong>One Column No Sidebars:</strong> <i>This is the page template recommended for building a home page or similar full width pages using SiteOrigin page builder.</i> <br>
+        Displays content constrained to 1140px content grid by default. Displays no sidebars. A page created with this template does not span across the entire browser window width (unlike the Full Width
+        template) and hence requires you to use 'Full Width' or 'Full Width Stretched' option in Layout section for the row in SiteOrigin page builder, if you need the background or the content to be stretched to occupy full width of the browser.
+        Displays no sidebars.
+    </li>
+    <li><strong>Blog:</strong> Displays the blog posts on the page. The nature of display- full width, grid, thumbnail
+        etc. can be configured through the options panel as depicted under <a href="#layout-management">layout
+            management</a></li>
+    <li><strong>Left Sidebar:</strong> Displays the theme's sidebar on the left side of the page.</li>
+    <li><strong>Right Sidebar/Default:</strong> Displays the theme's sidebar on the right side of the page - the default
+        layout for a page/post.
+    </li>
+    <li><strong>Portfolio 3 Columns:</strong> Displays the portfolio items in the a 3 column grid. Similar pages
+        available for 2 column and 4 column display of portfolio items.
+    </li>
+     <li><strong>Single Page Site: (legacy)</strong> - <i>Do not use if using SiteOrigin page builder for page development</i>. <br>Template for one page sites developed using <a href="#page-sections">Legacy Page Sections</a>. Composed of several instances of page section custom post type as explained in the Installation section above. 
+    Displays content across full width of the browser window unless you specify the <strong>[segment]</strong> shortcode (see documentation of the 
+    shortcode under <a href="#segment-shortcode">shortcodes</a> section) to constrain the content to 1140px centered grid. Displays no sidebars. 
+    </li>
+    <li><strong>Advanced Home Page: (legacy)</strong> - <i>Do not use if using SiteOrigin page builder for page development</i>. <br>Displays content across full width of the browser window unless you specify
+        the <strong>[segment]</strong> shortcode (see documentation of the shortcode under <a href="#segment-shortcode">shortcodes</a>
+        section) to constrain the content to 1140px centered grid. Displays no sidebars.
+    </li>
+    <li><strong>Full Width: (legacy)</strong> <i>Do not use if using SiteOrigin page builder for page development</i>. <br>Displays content across full width of the browser window unless you specify the
+        <strong>[segment]</strong> shortcode to constrain the content to 1140px centered grid. Displays no sidebars.
+    </li>
+</ol>
+To activate one of your theme's page templates simply select it from the drop-down box and then click the “<strong>Publish</strong>”
+or “<strong>Update</strong>” button.
+
+<hr/>
+
+<h3 id="translation"><strong>Translate</strong> - <a href="#toc">top</a></h3>
+
+<p>You can learn from <a href="http://codex.wordpress.org/Translating_WordPress">here</a> about translating your site
+    into your language. Use the appdev.pot in 'appdev/languages' folder as a template to create .po files. <a
+            href="http://www.poedit.net/">Poedit</a> is the popular free editor for creating .po and the corresponding
+    binary .mo files. Do reach out to us in case you find something that is not translation ready.</p>
+
+<hr/>
+
+<h3 id="icon-fonts"><strong>500+ Icons and Icon Fonts usage</strong> - <a href="#toc">top</a></h3>
+
+<p>The list of icons bundled with the theme is listed here -
+
+    <a href="https://www.livemeshthemes.com/wp-content/uploads/icon-sprites/index.html"
+       title="Font Icons bundled with Appdev Theme" target="_blank" rel="nofollow">Font Icons bundled with Appdev</a>
+
+    To use the icons, you just insert a markup like
+<pre>&lt;span class="icon-pencil"&gt;&lt;/span&gt;</pre>
+or some prefer
+<pre>&lt;i class="icon-pencil"&gt;&lt;/i&gt;</pre>
+to display the icon. </p>
+
+<p>The above link provides you with the class names to use to display the corresponding icon. These font icons can be
+    styled in CSS for color and size. You can utilize the custom.css file or the Custom CSS tab in the options panel to
+    insert styling information like this - </p>
+
+<pre>#my-section i { font-size: 32px; color: #333; }. </pre>
+
+<p>Do look for some examples of the usage in the demo content provided with the theme. </p>
+
+<p>Although I am not going to recommend it, theoretically you can use inline styling as well to scale the icon and color
+    it like this - </p>
+
+<pre>
+&lt;i class="icon-switch" style="color:blue; font-size:48px;"&gt;&lt;/i&gt;. 
+</pre>
+<p>If you cannot insert HTML markup into your content as explained above, you may want to look at the option of using
+    icon sprites or icon images bundled with the theme in the folder <strong>[theme
+        directory]/images/icons/icomoon/</strong>. The sprites folder has information on icons available in the sprite
+    and the <strong>[theme directory]/images/icons/icomoon/sprites.css</strong> file has required markup to use these
+    sprites. </p>
+<hr/>
+
+<h3 id="unlimited-sidebars"><strong>Unlimited Sidebars</strong> - <a href="#toc">top</a></h3>
+
+<p>The creation of unlimited custom sidebars is depicted below. Essentially, the custom sidebars are created in the
+    'Sidebar' options tab in options panel and the user gets to choose the required sidebar in the post/page edit
+    window.</p>
+
+<p class="center"><img src="assets/images/35-custom-sidebar-widgets1.png" alt="Unlimited Sidebars"/></p>
+
+<p>The custom sidebars defined will appear in the widgets WP admin page. Drag and drop the required widgets into the
+    sidebars</p>
+
+<p class="center"><img src="assets/images/36-custom-sidebar-widgets2.png" alt="Custom Sidebar Widgets"/></p>
+
+<p>In the page/post edit window, choose the custom sidebar of your choice or leave default as the choice to help theme
+    defined widgets panels to take effect.</p>
+
+<p class="center"><img src="assets/images/37-custom-sidebar-widgets3.png" alt="Specifying Custom Sidebars"/></p>
+
+<hr/>
+
+<h3 id="custom-headers"><strong>Custom Titles and Headers for pages/posts</strong> - <a href="#toc">top</a></h3>
+
+<p>Appdev offers unlimited flexibility in creating a custom header for a page/post. The above the fold content for any
+    page/post can be configured through custom content by specifying the required markup and/or backgrounds through the
+    input boxes provided in the page/post edit window in the WordPress admin panel as shown below. You may use <a
+            href="#segment-shortcode"><strong>[segment]</strong></a> shortcode to constrain the headings to a 1140px
+    centered grid. </p>
+
+<p class="center"><img src="assets/images/39-post-header-options.png" alt="Custom Headers for Posts/Pages"/></p>
+
+<h4 id="page-sections"><strong>Site Configuration with Legacy Page Sections</strong> - <a href="#toc">top</a></h4>
+
+<p><strong>Prior to 3.1 version, all page development was done through page sections and is no longer recommended but will continue to be supported for existing users. This section exists as a reference for those who have their site setup using page sections. </strong></p>
+
+<p><strong><i>If you are starting to build a site, we recommend you use SiteOrigin page builder for development instead of page sections.</i></strong></p>
+<p> If you import the sample data, all the required pages including home pages, page sections part of 
+these pages, portfolio entries are all created for you. If you need to know about how the initial site configuration works with Appdev, this section can help you. 
+Some of these steps are covered in the <a href="https://www.livemeshthemes.com/faqs/agile-theme-how-to-setup-theme-and-revolution-slider-youtube-video/">video tutorial</a>.</p>
+
+<p>Appdev can function as a multi-page or as a single page or as popularly known, an one page theme. Prior to v3.1, Appdev was built on the concept of page sections to make building a site of either type easier.</p>
+
+<p><b>Step 1: </b>Create <b>Page Sections</b> that go into the your single page. Page section custom post type is
+    meant for acting as individual units/sections that make up a typical one page site home page. Navigation menu on 
+    the top house internal links to these page sections helping to navigate the site. </p>
+
+<p>Appdev theme framework lets you any any number of page sections and you can actually compose multiple one page
+    instance in your site by using these page sections. More on that later.</p>
+
+<p class="center"><img src="assets/images/page-section-edit.png" alt="Page Section Edit for Single Page"/></p>
+
+<p>After your create page sections, make sure you set the value of <b>Order</b> attribute for each of the page sections
+    as shown in the above screenshot to indicate the order in which these sections are laid out in the single page. The
+    page sections are placed one below the other in a single page template in the order of increasing/ascending value of
+    Order attribute. Hence,
+    pages with higher values of order go into bottom section of the page while the pages with lower numbers starting
+    with zero value make the top sections of the one page template.</p>
+<p>If managing the order of the page sections seems cumbersome, we recommend that you install the popular <a 
+href="http://wordpress.org/plugins/post-types-order/" title="Post Types Order Plugin">Post Types Order</a> plugin to make
+your job easier. 
+
+<p><strong>Step 2: </strong>Once you have the page sections ready, add a new page with page template of type <strong>'Single Page Site'</strong>.
+
+<p>You then choose the Page sections that go into the single page by selecting the page sections under "Single Page Options" side panel in the Page Edit window below as shown in the screenshot below.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/single-page-edit.png" alt="Single Page Options Panel"/></p>
+
+<p><strong>Step 3: </strong>Make this page the home page by choosing it as one in the <strong>'Settings->Reading'</strong> tab.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/set-home-page.png" alt="Set Home Page"/></p>
+
+<p><strong>Step 4: </strong>Use the  WordPress menu to populate the top navigation menu in Appearance->Menus tab in the WordPress admin. Make sure
+    you setup one of the menus as the primary menu for the site and also make sure setup all internal links to page sections inside a
+    single page manually.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/wp-menu-setup-single-page.png" alt="WordPress Menu Setup for Single Page"/>
+</p>
+
+<p><strong>Step 5: </strong>To set custom background for pages/posts/portfolio items, navigate to <strong>Theme Options->Backgrounds</strong> tab and change the options for
+    'Background for Title Header Area' as seen the screenshot below. You can adjust the height of the background as well using the available option 'Height of Top Title Area'.</p>
+            
+<p class="center"><img class="img-thumbnail" src="assets/images/set-header-options.png" alt="Custom Headers for Posts/Pages/Portfolio"/></p>
+
+<p>Once you have the page created and set as home page, page sections created and options set for which sections go into the one page home, just
+    open the home page to verify that the page does contain the desired sections and the chosen navigation is displayed at the top of the page. </p>
+
+<p>You now have a small working site setup now. With the help of page sections you can now continue developing your site in an incremental/iterative fashion.</p>
+
+<div><h3>Multiple Single Pages in a site</h3></div>
+
+<p>To create multiple single pages, you will need to create another page with the page template 'Single Page Site' and
+    then in the page edit window, choose the page sections that go into this page. These one page "sub-pages" or page sections help you create
+    multiple one page templates to showcase multiple products or multiple aspects of your business in a single wordpress installation. </p>
+<p>Since each of these sub-pages have page sections of their own, you can create a custom menu in the WordPress Appearances -> Menus window and configure a custom WP
+    menu for a page. The theme provides a dropdown for choosing a custom menu in the page edit window (see bottom of the screenshot below). </p>
+<p>In order to save time replicating some of the menu items in the primary menu in custom menu, you can use the <a
+        href="http://wordpress.org/plugins/duplicate-menu/" title="Duplicate Menu plugin">Duplicate Menu</a> plugin to duplicate the
+    primary menu used for home page and then start customizing it to meet the needs of another One Page (Single Page) template page. </p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/single-page-edit.png" alt="Single Page Options Panel"/></p>
+
+<h4 id="migration-v31"><strong>Important - Migrating to v3.1 from versions v3.0 and below</strong> - <a href="#toc">top</a></h4>
+
+<p>If you are migrating an existing site running on v3.0 and below of Appdev to v3.1+, you must perform these simple steps to setup sliders and menus for the home page or other single page style pages. Depending on how you have setup your site, the whole exercise should take not more than 5-10 min.</p>
+
+<p><strong>Step 1:</strong> - If you did setup the slider and page sections from theme options earlier, you will need to repeat the setup from Page Edit window as seen below. Setting up sliders/page sections from theme options, auto-built menu functions are no longer part of Appdev 3.1 to help achieve greater flexibility, simplify the theme functions and provide more maintainable features.
+</p>
+
+<p>Choose the slider of your choice in Page Edit window under Advanced Entry Options or choose 'None' if you need to disable sliders altogether.</p>
+
+<p>If you have choose 'None' as your slider choice, you may want to remove title header for the single page. Check the option 'Remove Title Header' in the page edit window under 'Advanced Entry Options' as seen in the screenshot below.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/single-page-edit.png" alt="Single Page Options Panel"/></p>
+
+<p><strong>Step 2:</strong> - In the page edit window, choose the page sections for the page including the one set as home page. In earlier versions, one could specify page sections part of home page from the theme options panel and in v3.1 this function has been removed to make theme more flexible by handling selection at individual page level. </p>
+
+<p><strong>Step 3: </strong>If you had setup the site earlier using auto-built menu, you need setup the menu manually using the  WordPress menu to populate the top navigation menu in Appearance->Menus tab in the WordPress admin. Make sure
+    you setup one of the menus as the primary menu for the site and also make sure setup all internal links to page sections inside a
+    single page manually. Auto-built menu feature is no longer part of the theme.</p>
+
+<p>After you configure the menu in Appearance->Menus, you can set a custom menu for a page in the Page Edit window under Advanced Entry Options.</p>
+
+<p class="center"><img class="img-thumbnail" src="assets/images/wp-menu-setup-single-page.png" alt="WordPress Menu Setup for Single Page"/>
+</p>
+
+<hr/>
+
+Again, thank you so much for purchasing our theme. We will be glad to help, resolve issues for you, answer your
+questions and plan to provide updates to you. Since <strong>Appdev</strong> is built on common framework, we expect that
+any updates we do for any of our themes will be released as a framework update for all of our themes. For more general
+questions on WordPress or on ThemeForest themes, do visit the active forums maintained by them.
+<p class="append-bottom alt large"><strong>LiveMesh</strong></p>
+<a href="#toc">Go To Table of Contents</a>
+
+<hr class="space"/>
+</div>
+<!-- end div .container -->
+</body>
+</html>

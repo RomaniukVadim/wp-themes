@@ -1,0 +1,83 @@
+a, a:active, a:visited { color: #28c2ba; }
+a:hover { color: #888; }
+ul.post-list .byline a, ul.post-list .byline a:active, ul.post-list .byline a:visited { color: #28c2ba !important; }
+ul.post-list .byline a:hover { color: #888 !important; }
+.post-snippets .hentry .entry-title a:hover, ul.post-list .entry-title a:hover { color: #28c2ba !important; }
+th { background: #28c2ba; }
+#primary-menu .hover-bg, #primary-menu > ul.menu > li:hover > ul.sub-menu { border-color: #28c2ba; }
+#content .hentry h2.entry-title a:hover { color: #28c2ba; }
+.byline span i { color: #28c2ba; }
+.entry-meta span i { color: #28c2ba; }
+.entry-meta span:hover a { color: #28c2ba; }
+.loop-nav a:hover { color: #28c2ba; }
+.page-links a, .pagination a, .page-links a:visited, .pagination a:visited { background: #28c2ba; }
+.sidebar li:hover > a { color: #28c2ba !important; }
+#title-area { background: #28c2ba; }
+#title-area a, #title-area a:active, #title-area a:visited { color: #28c2ba; }
+#portfolio-filter a:hover { color: #28c2ba; }
+.dropcap2, .dropcap3, .dropcap4, .dropcap5 { background-color: #28c2ba; }
+.header-fancy span { background-color: #28c2ba; }
+h3.fancy-header { background-color: #28c2ba; }
+.top-of-page a:hover { color: #28c2ba; }
+.tabs .current, .tabs .current:hover, .tabs li.current a { border-top: 2px solid #28c2ba; }
+.read-more a { color: #28c2ba; }
+ul#recentcomments li.recentcomments a { color: #28c2ba; }
+.tagcloud a:hover, #footer .tagcloud a:hover { background-color: #28c2ba; }
+div.service-box2:hover h2 a { color: #28c2ba; }
+div.service-box1:hover { background-color: #28c2ba; }
+.service-box3:hover { border-color: #28c2ba; }
+#services-rounded .service-box4:hover h2 { color: #28c2ba; }
+.heading1 h2, .user-invitation h2 { color: #28c2ba; }
+#column-shortcode-section p { background: #28c2ba; }
+.team-member:hover h3 a { color: #28c2ba; }
+.pricing-table .pricing-plan h4 { color: #28c2ba; }
+.pricing-table .plan-details li.free-plan-desc span { color: #28c2ba; }
+#home2-heading .heading2 h2 { background: #28c2ba; background: rgba(40, 194, 186, 0.7); }
+#content .contact-form input:focus, #content .contact-form textarea:focus,
+#footer .contact-form input:focus, #footer .contact-form textarea:focus {
+    border: 1px solid rgba(40, 194, 186, 0.6);
+    box-shadow: 0 0 2px rgba(40, 194, 186, 0.6); }
+.image-info, .team-member .team-member-hover { background: #28c2ba; background: rgba(40, 194, 186, 0.7); }
+span.action-link a:hover { color: #28c2ba; }
+a.more-link:hover { color: #28c2ba; }
+.service-box4 [class^="icon-"] { color: #28c2ba; }
+#app-features .aside { color: #28c2ba; }
+.features-list-alternate .icon { color: #28c2ba; }
+
+#flickr-widget .flickr_badge_image img:hover { border-color: #28c2ba; }
+#footer .widget_text a.small, #footer .widget_text a.small:visited { color: #28c2ba; }
+a.comment-reply-link, a.comment-reply-link:visited, a.comment-edit-link, a.comment-edit-link:visited { background-color: #28c2ba; }
+.tp_recent_tweets li a { color: #28c2ba !important; }
+#footer .tp_recent_tweets li a { color: #28c2ba !important; }
+
+.pricing-table .popular .top-header {
+    background-color: #28c2ba; background-image: -webkit-linear-gradient(top, #38d8d0, #28c2ba); background-image: -moz-linear-gradient(top, #38d8d0, #28c2ba); background-image: linear-gradient(to bottom, #38d8d0, #28c2ba); }
+
+
+/* Skin specific icons */
+
+.toggle-label { background-image: url("teal/toggle-button-plus.png"); }
+
+.active-toggle .toggle-label { background-image: url("teal/toggle-button-minus.png"); }
+
+.pricing-table .plan-details li i.tick { background-image: url("teal/tick.png"); }
+
+.pricing-table .plan-details li i.cross { background-image: url("teal/cross.png"); }
+
+.contact-form .button i.send { background-image: url("teal/send-icon.png"); }
+
+#featured-sources .heading2 .title { background-image: url("teal/featured-icon.png")}
+
+.tp-bullets.simplebullets.round .bullet { background-image: url("teal/bullet.png"); }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+    .pricing-table .plan-details li i.tick { background-image: url("teal/tick@2x.png"); }
+
+    .pricing-table .plan-details li i.cross { background-image: url("teal/cross@2x.png"); }
+
+    .contact-form .button i.send { background-image: url("teal/send-icon@2x.png");}
+
+    #featured-sources .heading2 .title { background-image: url("teal/featured-icon@2x.png")}
+
+    }

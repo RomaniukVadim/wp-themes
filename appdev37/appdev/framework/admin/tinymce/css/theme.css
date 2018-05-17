@@ -1,0 +1,28 @@
+/*----------------- Styling for Shortcode Builder -------------------*/
+
+#shortcode_tab a , #shortcode_panel label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    }
+
+#shortcode_tab span {
+    padding-top: 4px;
+    }
+
+#shortcode_tab a , #shortcode_panel label, #shortcode_select {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#shortcode_select {
+    height: 28px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    }
+form[name="shortcode_tabs"] input[type="button"], form[name="shortcode_tabs"] input[type="submit"] {
+    padding: 2px 12px !important;
+    font-size: 13px !important;
+    line-height: 13px !important;
+    letter-spacing: 1px;
+    margin-top: 2px !important;
+    }

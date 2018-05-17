@@ -1,0 +1,22 @@
+/**
+ *
+ * Custom.css file helps you override css style elements defined in style.css and the skins too. Very handy for customization without touching the
+ * theme code.
+ * You may want to backup and retain this file when updating the theme to retain customizations.
+ *
+ */
+
+p.comments-closed {
+    display: none;
+    }
+
+/* ---------------------------------------------- Override Syntax Highlighter  ----------------------------------------- */
+
+.syntaxhighlighter.nogutter {
+    border: 1px solid #E0E0E0 !important;
+    }
+
+#yarpp-related-posts {
+    margin-top: 0px;
+    }
+

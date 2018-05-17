@@ -1,0 +1,10 @@
+home-default
+home-products
+home-fullscreen
+home-products-slider
+home-categories
+home_boxed
+fashion
+one-page-slider
+home-store
+home-store-with-sidebar

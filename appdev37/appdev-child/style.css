@@ -1,0 +1,51 @@
+/*
+Theme Name:     Appdev Child
+Theme URI:      https://www.livemeshthemes.com/appdev
+Description:    Child theme for the Appdev Theme by LiveMesh
+Author:         LiveMesh
+Author URI:     http://themeforest.net/user/livemesh
+Template:       appdev
+Version:        0.1.0
+*/
+
+/* IMP: Download the free Museo 500 web font from http://www.fontspring.com/fonts/exljbris/museo
+* and upload the web fonts to your server and include URL for the generated web font elements here . */
+@font-face {
+    font-family: 'Museo';
+    src: url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_0_0.eot');
+    src: url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_0_0.eot?#iefix') format('embedded-opentype'), url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_0_0.woff') format('woff'), url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_0_0.ttf') format('truetype');
+    font-weight: 700;
+    }
+
+@font-face {
+    font-family: 'Museo';
+    src: url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_1_0.eot');
+    src: url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_1_0.eot?#iefix') format('embedded-opentype'), url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_1_0.woff') format('woff'), url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_1_0.ttf') format('truetype');
+    font-weight: 300;
+    }
+
+@font-face {
+    font-family: 'Museo';
+    src: url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_2_0.eot');
+    src: url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_2_0.eot?#iefix') format('embedded-opentype'), url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_2_0.woff') format('woff'), url('https://www.livemeshthemes.com/appdev/wp-content/fonts/Museo/2793F1_2_0.ttf') format('truetype');
+    font-weight: 500;
+    }
+
+/* IMP: Make sure you input  Museo as the custom font for Headings in the Fonts tab in the theme options panel. */
+h1, h2, h3, h4, h5, h6, #before-content-area h1, #before-content-area h2, #sitemap-template h2, #archives-template h2, .archive h2, #portfolio-full-width .entry-title, #portfolio-template .entry-title, .post-snippets .hentry .entry-title, #retina-text h3 { font-family: 'Museo'; font-weight: 500; }
+
+#content .hentry .entry-meta span a, .entry-title, .entry-title a, #primary-menu > ul.menu > li > a { font-family: 'Museo'; }
+
+#portfolio-full-width .entry-title, #portfolio-template .entry-title, .post-snippets .hentry .entry-title { font-size: 16px; }
+
+.testimonials2-slider-container blockquote > p, blockquote, .pullquote { font-family: 'Museo'; }
+
+button, .button, .button:active, .button:visited, input[type="button"], input[type="submit"], input[type="reset"] { font-family: 'Museo'; }
+
+.single.postid-4296 img.featured { display: none; }
+
+@media only screen and (max-width: 767px) {
+
+    .features-list-alternate .iphone-slider-container { margin-top: 0; }
+
+    }

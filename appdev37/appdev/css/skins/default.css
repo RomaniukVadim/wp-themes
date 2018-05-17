@@ -1,0 +1,78 @@
+a, a:active, a:visited { color: #dc4637; }
+a:hover { color: #888; }
+ul.post-list .byline a, ul.post-list .byline a:active, ul.post-list .byline a:visited { color: #DC4637 !important; }
+ul.post-list .byline a:hover { color: #888 !important; }
+.post-snippets .hentry .entry-title a:hover, ul.post-list .entry-title a:hover { color: #DC4637 !important; }
+th { background: #dc4637; }
+#primary-menu .hover-bg, #primary-menu > ul.menu > li:hover > ul.sub-menu { border-color: #DC4637; }
+#content .hentry h2.entry-title a:hover { color: #dc4637; }
+.byline span i { color: #dc4637; }
+.entry-meta span i { color: #dc4637; }
+.entry-meta span:hover a { color: #dc4637; }
+.loop-nav a:hover { color: #dc4637; }
+.page-links a, .pagination a, .page-links a:visited, .pagination a:visited { background: #dc4637; }
+.sidebar li:hover > a { color: #dc4637 !important; }
+#title-area { background: #dc4637; }
+#title-area a, #title-area a:active, #title-area a:visited { color: #dc4637; }
+#portfolio-filter a:hover { color: #dc4637; }
+.dropcap2, .dropcap3, .dropcap4, .dropcap5 { background-color: #dc4637; }
+.header-fancy span { background-color: #dc4637; }
+h3.fancy-header { background-color: #dc4637; }
+.top-of-page a:hover { color: #dc4637; }
+.tabs .current, .tabs .current:hover, .tabs li.current a { border-top: 2px solid #dc4637; }
+.read-more a { color: #dc4637; }
+ul#recentcomments li.recentcomments a { color: #dc4637; }
+.tagcloud a:hover, #footer .tagcloud a:hover { background-color: #dc4637; }
+div.service-box2:hover h2 a { color: #dc4637; }
+div.service-box1:hover { background-color: #dc4637; }
+.service-box3:hover { border-color: #dc4637; }
+#services-rounded .service-box4:hover h2 { color: #dc4637; }
+.heading1 h2, .user-invitation h2 { color: #dc4637; }
+#column-shortcode-section p { background: #dc4637; }
+.team-member:hover h3 a { color: #dc4637; }
+.pricing-table .pricing-plan h4 { color: #dc4637; }
+.pricing-table .plan-details li.free-plan-desc span { color: #dc4637; }
+#home2-heading .heading2 h2 { background: #dc4637; background: rgba(220, 70, 55, 0.7); }
+#content .contact-form input:focus, #content .contact-form textarea:focus, #footer .contact-form input:focus,
+#footer .contact-form textarea:focus { border: 1px solid rgba(220, 70, 55, 0.6); box-shadow: 0 0 2px rgba(220, 70, 55, 0.6); }
+.image-info, .team-member .team-member-hover { background: #dc4637; background: rgba(220, 70, 55, 0.7); }
+span.action-link a:hover { color: #dc4637; }
+a.more-link:hover { color: #dc4637; }
+.service-box4 [class^="icon-"] { color: #dc4637; }
+#app-features .aside { color: #db4637; }
+.features-list-alternate .icon { color: #dc4637; }
+
+#flickr-widget .flickr_badge_image img:hover { border-color: #dc4637; }
+#footer .widget_text a.small, #footer .widget_text a.small:visited { color: #dc4637; }
+a.comment-reply-link, a.comment-reply-link:visited, a.comment-edit-link, a.comment-edit-link:visited { background-color: #dc4637; }
+.tp_recent_tweets li a { color: #dc4637 !important; }
+#footer .tp_recent_tweets li a { color: #dc4637 !important; }
+
+
+/* Skin specific icons */
+
+.toggle-label { background-image: url("default/toggle-button-plus.png"); }
+
+.active-toggle .toggle-label { background-image: url("default/toggle-button-minus.png"); }
+
+.pricing-table .plan-details li i.tick { background-image: url("default/tick.png"); }
+
+.pricing-table .plan-details li i.cross { background-image: url("default/cross.png"); }
+
+.contact-form .button i.send { background-image: url("default/send-icon.png"); }
+
+#featured-sources .heading2 .title { background-image: url("default/featured-icon.png")}
+
+.tp-bullets.simplebullets.round .bullet { background-image: url("default/bullet.png"); }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+    .pricing-table .plan-details li i.tick { background-image: url("default/tick@2x.png"); }
+
+    .pricing-table .plan-details li i.cross { background-image: url("default/cross@2x.png"); }
+
+    .contact-form .button i.send { background-image: url("default/send-icon@2x.png");}
+
+    #featured-sources .heading2 .title { background-image: url("default/featured-icon@2x.png")}
+
+    }

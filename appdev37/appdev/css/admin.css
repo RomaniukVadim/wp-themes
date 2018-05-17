@@ -1,0 +1,26 @@
+/* 
+    Document   : admin
+    Created on : Feb 4, 2012, 3:24:24 PM
+    Author     : LiveMesh
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.input-social {
+    display: block;
+}
+
+#slide_box input, #showcase_slide_box input, #portfolio_box input {
+    display: block;
+    margin-bottom: 15px !important;
+    padding: 5px;
+    width: 320px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CCC #EEE #EEE #CCC;
+}
+
+#portfolio_info {
+    max-width: 98%;
+}

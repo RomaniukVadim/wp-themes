@@ -1,0 +1,9 @@
+revslider/home_boxed.zip
+revslider/home-categories.zip
+revslider/home-default.zip
+revslider/home-fullscreen.zip
+revslider/home-products.zip
+revslider/home-products-slider.zip
+revslider/home-store.zip
+revslider/home-store-with-sidebar.zip
+revslider/one-page-slider.zip

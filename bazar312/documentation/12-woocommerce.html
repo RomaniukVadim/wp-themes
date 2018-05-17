@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bazar Premium WordPress Theme documentation</title>
+<link rel="stylesheet" type="text/css" href="library/style.css"/>
+<script type="text/javascript" src="library/scripts/jquery.js"></script>
+<script type="text/javascript" src="library/scripts/jquery.autosize-min.js"></script>
+<script type="text/javascript" src="library/scripts/custom.js"></script>
+</head>
+<body>
+<a href="#header" class="totop">Back to top</a>
+<div id="header">
+	<div id="inner">
+		<div id="logo">
+					<img src="library/images/logo.png" />
+		</div>
+		<div id="meta">
+			<h5>Documentation for Bazar - Premium  Wordpress theme<br/>
+			For <strong>Video tutorials and support</strong> <a href="https://yithemes.com/my-account/support/dashboard/">visit our forum!</a></h5>
+		</div>
+		<div id="nav">
+			<ul id="tabnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="01-install.html">Getting started</a></li>
+				<li><a href="02-pre-customization.html">Pre-Customization</a></li>
+				<li><a href="03-customization.html">Customization</a></li>
+				<li><a href="04-page-settings.html">Page Settings</a></li>
+				<li><a href="05-navigation.html">Navigation Bar</a></li>
+				<li><a href="06-megamenu.html">Megamenu</a></li>
+				<li><a href="07-shortcodes.html">Shortcodes</a></li>
+				<li><a href="08-widgets.html">Widgets</a></li>
+				<li><a href="09-updating.html">Updating</a></li>
+				<li><a href="10-newsletter.html">Newsletter</a></li>
+                <li><a href="11-localization.html">Localization</a></li>
+                <li class="active"><a rel="nofollow" href="12-woocommerce.html">WooCommerce</a></li>
+                <li><a href="13-changelog.html">Changelog</a></li>
+                <li><a href="14-help.html">Getting Help</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="tab1" class="contentwrap">
+        <div class="sidebar">
+
+            <ul>
+                <li><a href="#install">Installation</a></li>
+                <li><a href="#setting">Settings</a></li>
+                <li><a href="#prod">Adding a product</a></li>
+                <li><a href="#prodvar">Product variations</a></li>
+                <li><a href="#gall">Adding product galleries</a></li>
+                <li><a href="#image">Image dimension settings</a></li>
+                <li><a href="#ajax">YITH WooCommerce Ajax Navigation</a></li>
+                <li><a href="#compare">YITH WooCommerce Compare</a></li>
+
+                <a href="#header" class="totop">Back to top</a>
+            </ul>
+
+        </div>
+		
+		<div class="pagecontent">
+            <h4>WooCommerce</h4>
+
+            <p>You can see our videotutorials of WooCommerce plugins at <a href="https://yithemes.com/my-account/support/dashboard//entries/23009382-Bazar-Video-Tutorials">this link</a> in our support forum.</p>
+
+            <a name="install"></a>
+            <h2>Installation</h2>
+
+            <p>Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t even need to leave your web browser. To do an automatic install of WooCommerce log in to your WordPress admin panel and go to: <strong>Plugins &gt; Add New</strong>.</p>
+            <p>In the search field type “WooCommerce” and click Search Plugins. Once you’ve found the plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking <strong>Install Now</strong>. After clicking that link you will be asked if you’re sure you want to install the plugin. Click “yes” and WordPress will automatically complete the installation.</p>
+
+            <p>After you’ve installed and activated the plugin, be sure to select ‘<strong>Install WooCommerce Pages</strong>‘ to get started.</p>
+
+            <p><img src="library/images/12-001.png" alt="woocommerce" /></p>
+
+            <a name="setting"></a>
+            <h2>Settings</h2>
+
+            <p>Inside this panel you’ll find all the core WooCommerce settings such as catalog settings, pages, payment gateways, shipping methods and tax rates accessible via the tabs at the top of the screen.</p>
+
+            <p>To configure your shop go to WooCommerce > Settings. Then browse through the tabs below to get more information on the WooCommerce Options.</p>
+
+            <p>For more details, please follow the <a rel="nofollow" href="http://docs.woothemes.com/document/woocommerce/#configuringwoocommercesettings">official docs</a></p>
+
+            <a name="prod"></a>
+            <h2>Adding a product</h2>
+
+            <p>Adding a simple product is a straight forward process and not too dissimilar from authoring a standard WordPress post. In the Products menu click Add Product; you will be presented with a familiar interface, and should immediately see where to type the product title and full description.</p>
+
+            <p><img src="library/images/12-002.png" alt="woocommerce" /></p>
+
+            <p>Next is the Product Data tab set. This is where the majority of the product data is input.</p>
+
+            <p><img src="library/images/12-003.png" alt="woocommerce" /></p>
+
+
+            <ul>
+                <li>SKU – stock keep unit, used to track products. Must be unique, and should be named so it does not clash with post ID’s</li>
+                <li><strong>Price</strong>:
+                    <ul>
+                        <li>Regular Price – The item’s main price</li>
+                        <li>Sale Price – The item’s sale price</li>
+                    </ul>
+                </li>
+                <li><strong>Tax</strong>:
+                    <ul>
+                        <li>Tax Status – The items’ tax status</li>
+                        <li>Tax Class – Which tax class the product belongs to. You can set up tax classes in WooCommerce > Settings > Tax</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>For more details, please follow the <a rel="nofollow" href="http://docs.woothemes.com/document/managing-products/">official docs</a></p>
+
+            <a name="prodvar"></a>
+            <h2>Product variations</h2>
+
+            <p>Variable products are a great feature of WooCommerce for offering variations of a product with different prices, stock and more. They can be used for offering variations of a product e.g. a large t-shirt vs a small t-shirt. Each variation can have different properties and prices.</p>
+            
+            <p><strong>Set the product type</strong>: to add a variable product first selection the type ‘variable’ from the product type dropdown. The interface will change to reflect your selection.</p>
+            <p><img src="library/images/12-004.png" alt="woocommerce" /></p>
+
+            <p><strong>Define variation attributes</strong>: on the attributes tab add some attributes to your product. You can use global attributes or define some custom ones specific for your product.</p>
+            <p><img src="library/images/12-005.png" alt="woocommerce" /></p>
+
+            <p>Make sure to assign all values of the attribute to the variable product which will become options and check the 'variation' checkbox on each attribute to tell WooCommerce its for your variations:</p>
+            <p><img src="library/images/12-006.png" alt="woocommerce" /></p>
+
+            <p><strong>Add variations</strong>: After saving your product you can now begin to add variations, or link all possible variations. To add a variation, click the ‘add variation’ button. A new blank row will appear ready for you to input the data.</p>
+            <p><img src="library/images/12-007.png" alt="woocommerce" /></p>
+
+            <p><strong>Price fields must be set per product</strong></p>
+
+            <p>For more details, please follow the <a rel="nofollow" href="http://docs.woothemes.com/document/product-variations/">official docs</a></p>
+
+            <a name="gall"></a>
+            <h2>Adding product galleries</h2>
+
+            <p>Product galleries simply display all images attached to a product, with the Featured Image being the primary image.</p>
+
+            <p>You can create a product gallery using the same method as adding a featured image, rather using the Product Gallery meta box instead.</p>
+
+            <p><img src="library/images/12-008.png" alt="woocommerce" /></p>
+
+            <p>For more details, please follow the <a rel="nofollow" href="http://docs.woothemes.com/document/adding-product-images-and-galleries/">official docs</a></p>
+
+            <a name="image"></a>
+            <h2>Image dimension settings</h2>
+
+            <p>On the catalog tab, WP Dashboard -> WooCommerce -> Settings -> Catalog, of the WooCommerce settings you’ll see three image dimension inputs.</p>
+
+            <ul>
+                <li>Catalog Images appear on your shop loops. Product categories, up sells / cross sells etc</li>
+                <li>Single Product Image is the main image on your product details page</li>
+                <li>Product thumbnails are the gallery thumbnails on your product details page (if you have a gallery)</li>
+            </ul>
+
+            <p>The images you upload will be resized to match the values your input here accurately as possible. IE if your settings are 100×100 and you upload a 300×600 image it will be resized to 100×200. You can also choose to ‘hard crop’ your images which will force them to be the size specified in these settings, regardless of the raw image you upload, but will be cropped rather than distorted in scale.</p>
+
+            <p>Remember if you change these settings after uploading product imagery you will need to regenerate your thumbnails within WordPress for the changes to be applied to your current imagery. To do this we recommend using the Regenerate Thumbnails plugin.On the catalog tab, WP Dashboard -> WooCommerce -> Settings -> Catalog, of the WooCommerce settings you’ll see three image dimension inputs.</p>
+
+            <a name="ajax"></a>
+            <h2>YITH WooCommerce Ajax Navigation</h2>
+            <p>To use the YITH WooCommerce Ajax Navigation you need to create an attribute in <strong>Products -> Attributes</strong> with more Terms.</p>
+            <p><img src="library/images/12-009.png" alt="woocommerce" /></p>
+
+            <p>Create more products with the <strong>attributes</strong> created before.</p>
+
+            <p>After, go to <strong>Appearance -> Widgets</strong> and insert the widget called <strong>YITH WooCommerce Ajax Navigation</strong> in a sidebar. You need to insert one widget for each attributes.</p>
+            <p><strong>NOTE: the sidebar must be set in a Shop page</strong></p>
+            <p>Set the widget with:</p>
+            <ul>
+                <li>Title</li>
+                <li>Attribute</li>
+                <li>Query type</li>
+                <li>Type</li>
+            </ul>
+
+            <p><img src="library/images/12-010.png" alt="woocommerce" /></p>
+
+            <a name="compare"></a>
+            <h2>YITH WooCommerce Compare</h2>
+            <p>You can set the options of this plugin in <strong>WooCommerce > Settings >Products Compare</strong>.</p>
+            <p>You can show the button <strong>Compare</strong> checking the options "Show button in single product page" and "Show button in products list".</p>
+            <p><img src="library/images/12-011.png" alt="woocommerce" /></p>
+
+            <p>In <strong>Table Settings</strong> you can set the attributes that it will be show in the compare popup.</p>
+
+            <p>For yse the Compare plugin, you need simple to create a product with some attributes and click on the popup button. Now you see the popup with the products:</p>
+            <p><img src="library/images/12-012.png" alt="woocommerce" /></p>
+
+            <p>If you want add a custom link in the menu for open a popup (for example in the Topbar menu), you can add the link with this CSS class: <strong>yith-woocompare-open</strong></p>
+            <p><img src="library/images/menu-compare.png" alt="woocommerce" /></p>
+
+        </div>
+	</div>
+</div>
+</body>
+</html>

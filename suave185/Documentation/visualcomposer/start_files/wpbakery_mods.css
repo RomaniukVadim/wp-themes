@@ -1,0 +1,157 @@
+#globalWrapper {
+  -webkit-box-shadow: none;
+  border-top: none;
+  position: relative;
+  margin: 1.5em auto;
+}
+#p-logo {
+  width: 100%;
+  top: -23px;
+  height: 72px !important;
+  margin: 0;
+}
+#p-logo a,
+#p-logo a:hover {
+  height: 72px !important;
+}
+a img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background: #252D39;
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.75em;
+  font-weight: 400;
+  border-top: solid 5px #940D0F;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+}
+h1 {
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+h4,
+#columnOne h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+h5,
+.mw-content-ltr h3 {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 14px;
+}
+p,
+ul {
+  margin-bottom: 10px;
+}
+#p-search {
+  position: inherit;
+  top: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+#searchBody input[type="submit"] {
+  display: none;
+}
+#searchBody input[type="search"] {
+  width: 222px;
+  border: 1px solid #D0D0D0;
+  padding: 8px;
+}
+#p-logo a {
+  display: block;
+  background: url(../../assets/kb.png) no-repeat center center;
+}
+#firstHeading {
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #D0D0D0;
+  margin-bottom: 30px;
+}
+#firstHeading h1 {
+  font-size: 30px;
+  line-height: 34px;
+}
+#contentSub {
+  display: none;
+}
+#catlinks,
+.catlinks {
+  margin: 30px 0 10px 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+#bodyContent p + h2,
+#bodyContent table + h2,
+#bodyContent p + h3,
+#bodyContent table + h3,
+#bodyContent p + div > div > h2,
+#bodyContent table + div > div > h2,
+#bodyContent p + div > div > h3,
+#bodyContent table + div > div > h3 {
+  margin-top: 30px;
+}
+#toc ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#toc ul ul {
+  margin: 0 1.5em 20px 0;
+  padding-left: 1.5em;
+}
+#toc ul li {
+  list-style: none;
+}
+.mw-content-ltr ul {
+  margin: 0 0 20px 0;
+  list-style: none;
+}
+.mw-content-ltr ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #111111;
+}
+h2 {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 0 0 18px 0;
+}

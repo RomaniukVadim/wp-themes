@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bazar Premium WordPress Theme documentation</title>
+<link rel="stylesheet" type="text/css" href="library/style.css"/>
+<script type="text/javascript" src="library/scripts/jquery.js"></script>
+<script type="text/javascript" src="library/scripts/jquery.autosize-min.js"></script>
+<script type="text/javascript" src="library/scripts/custom.js"></script>
+</head>
+<body>
+<a href="#header" class="totop">Back to top</a>
+<div id="header">
+	<div id="inner">
+		<div id="logo">
+					<img src="library/images/logo.png" />
+		</div>
+		<div id="meta">
+			<h5>Documentation for Bazar - Premium  Wordpress theme<br/>
+			For <strong>Video tutorials and support</strong> <a href="https://yithemes.com/my-account/support/dashboard/">visit our forum!</a></h5>
+		</div>
+		<div id="nav">
+			<ul id="tabnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="01-install.html">Getting started</a></li>
+				<li><a href="02-pre-customization.html">Pre-Customization</a></li>
+				<li><a href="03-customization.html">Customization</a></li>
+				<li><a href="04-page-settings.html">Page Settings</a></li>
+				<li><a href="05-navigation.html">Navigation Bar</a></li>
+				<li><a href="06-megamenu.html">Megamenu</a></li>
+				<li><a href="07-shortcodes.html">Shortcodes</a></li>
+				<li><a href="08-widgets.html">Widgets</a></li>
+				<li class="active"><a href="09-updating.html">Updating</a></li>
+				<li><a href="10-newsletter.html">Newsletter</a></li>
+                <li><a href="11-localization.html">Localization</a></li>
+                <li><a rel="nofollow" href="12-woocommerce.html">WooCommerce</a></li>
+                <li><a href="13-changelog.html">Changelog</a></li>
+                <li><a href="14-help.html">Getting Help</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="tab1" class="contentwrap">
+        <div class="sidebar">
+
+            <ul>
+                <li><a href="#update">Update alert</a></li>
+                <li><a rel="nofollow" href="#filezilla">Update via Filezilla</a></li>
+                <li><a href="#ftp">Update via FTP</a></li>
+
+                <a href="#header" class="totop">Back to top</a>
+            </ul>
+
+        </div>
+		
+		<div class="pagecontent">
+            <h2>Updating Your Theme Files</h2>
+
+            <p>From time to time, you will see an Admin panel notice alerting you about available updates. In this section, you will learn how to install the updated files via FTP and via Filezilla.</p>
+
+            <h2><a name="update"></a>Update alert</h2>
+            <p><strong>THEME UPDATE ALERT</strong> - Whenever we update our theme files, we will send an alert through your WP Admin panel. <strong>In this example, you see an alert for an update to the Bazar Child theme. **Note &ndash; there is also a second update alert here, which probably means that one of your plugins has an update available.</strong><br />
+                <img src="library/images/09-001.jpg" alt="update" /></p>
+
+
+            <p><strong>YOU CAN GET TO YOUR UPDATE SCREEN BY CLICKING ON &ldquo;BAZAR CHILD&rdquo; OR BY GOING TO YOUR LEFT SIDEBAR AND CLICKING ON &ldquo;THEMES.&rdquo;</strong><br />
+                <br />
+                On the &ldquo;<strong>Themes</strong>&rdquo; Panel, a yellow bar will say &ldquo;A new version of the Bazar Child is available for download.&rdquo;<br />
+                <img src="library/images/09-002.jpg" alt="update" /><br />
+                <strong>Read the &ldquo;Update Download&rdquo; instructions carefully</strong>, then<br />
+                <br />
+                <strong>BACKUP YOUR FILES!</strong> This is the safest thing you can do whenever you are updating your files. There are many plugins for backing up your files. Just go to <a rel="nofollow" href="http://wordpress.org/extend/plugins/">Wordpress Plugins</a> and experiment with a few. One suggestion is the plugin called <a rel="nofollow" href="http://wordpress.org/extend/plugins/xcloner-backup-and-restore/">XCloner</a>.<br />
+                <br />
+                Now go to your Themeforest account and download the updated files to your computer desktop.<br />
+                <br />
+                <strong>Complete all the CHILD THEME steps of this manual to update your child theme.</strong></p>
+
+            <h2><a name="filezilla"></a>Update via Filezilla</h2>
+            <p><strong>Updating Via Filezilla - Now you will learn how to update your files using the Filezilla client</strong>.<br />
+                <br />
+                First, <strong>BACKUP YOUR FILES</strong>! This is always the safest thing to do.<br />
+                <br />
+                Next, download and install the Filezilla Client - <a rel="nofollow" href="http://filezilla-project.org/">http://filezilla-project.org/</a><br />
+                <br />
+                Now <strong>OPEN FILEZILLA</strong> to see this window:<br />
+                <img src="library/images/09-003.jpg" alt="update" /><br />
+                <strong>Fill in your FTP Credentials</strong>, like in the image shown below:<br />
+                <img src="library/images/09-004.jpg" alt="update" /><br />
+                Now &ldquo;<strong>CLICK QUICKCONNECT</strong>&rdquo; and Filezilla will load your website. Here is how it will look:<br />
+                <img src="library/images/09-005.jpg" alt="update" /><br />
+                Now use the right side panel to <strong>navigate to your themes folder</strong>. In the example above, the theme folder is <strong>public_html/wp-content/themes/</strong>, however, <strong>not all web hosting have public_html</strong>, it may be something different in your server.<br />
+                <br />
+                <strong>After your themes/ folder is open</strong>, use the left side panel to <strong>navigate to the place where you have extracted the theme folder</strong>. In this example, the extracted theme folder is on the desktop.<br />
+                <br />
+                Drag the extracted theme folder into your web hosting:<br />
+                <img src="library/images/09-006.jpg" alt="update" /><br />
+                <strong>**Note &ndash; you may be asked if you want to overwrite files and/or folder. Tick the option to &quot;Always use this action&quot; and click on &quot;Ok.&rdquo; Then wait until all files are uploaded</strong>.<br />
+                <br />
+                That&#39;s all there is to it!<br />
+                <br />
+                <strong>But wait!</strong> Using this updating method will overwrite all your custom code. If you edited some files, your changes will be lost.<br />
+                <br />
+                <strong>If you do not want to lose any changes</strong>, do not follow the last step of dropping the entire folder. Just follow the steps below.<br />
+                <br />
+                <ul>
+                    <li>The most important thing is to have a list of files with your custom codes.<br />
+                        <br />
+                        <strong>In our example, we edited functions.php and custom.css adding some code</strong>.<br />
+                    </li>
+                    <li>To find out which individual theme files were changed with the update, open the theme changelog. You can find this in:<br />
+                        <br />
+                        <strong>yourthemefolder/Changelog.txt</strong>. Every time we create a new update, we will use insert what we changed and which files have been changed into the <strong>yourthemefolder/Changelog.txt</strong> file. Check the file list to be sure that your custom files are not changed in this update.<br />
+                        <br />
+                        Here is an example of a ChangeLog List:<br />
+                        <br />
+                        <strong>UPDATED:</strong><br />
+                        bazar-child/style.css<br />
+                        bazar-child/woocommerce/*<br />
+                        core/functions-core.php<br />
+                        core/functions-template.php<br />
+                        core/lib/yit/Backup/Backup.php<br />
+                        core/lib/yit/Portfolio_type/Portfolio_type.php<br />
+                        core/lib/yit/Type/Types/Typography.php<br />
+                        core/templates/shortcodes/newsletter_form.php<br />
+                        core/widgets/almost_all_categories.php<br />
+                        core/yit/Cache.php<br />
+                        core/yit/Contact_Form.php<br />
+                        core/yit/CPT_Unlimited.php<br />
+                        <br />
+                        As you can see by this list, the files <strong>functions.php and custom.css</strong> ARE NOT changed.<br />
+                        <br />
+                        <strong>**Note, the functions.php and custom.css files cannot be uploaded</strong>, so you will need to <strong>open your FTP client</strong> and connect to your website.<br />
+                    </li>
+                    <li>Now <strong>navigate to wp-content/themes/</strong> and <strong>open your theme folder</strong> (<strong>wp-content/themes/bazar/</strong>, in this example).<br />
+                    </li>
+                    <li><strong>Select all files and folders, except the 2 with custom codes</strong>. Drag them and drop all in the right side panel, like in the screenshot below.<br />
+                        <img src="library/images/09-007.jpg" alt="update" /><br />
+                    </li>
+                    <li>FileZilla will ask if you want to overwrite the files and folders. Say &ldquo;Yes&rdquo; and overwrite all files and folders.<br />
+                    </li>
+                    <li><strong>**Note - If your custom files are in the UPDATED list, you have to update them manually</strong>. You need to re-add your custom code to the updated file again, and only then will you upload it, overwriting the file online.
+                    </li>
+                </ul>
+            </p>
+
+            <h2><a name="ftp"></a>Update via FTP</h2>
+            <p><strong>UPDATING YOUR REGULAR THEME FILES VIA FTP</strong> &ndash; You can also upload the files via FTP. If you need a refresher course on how to get to your FTP files, please go to <strong>Step One, Installing the Bazar Shop Files</strong>.<br />
+                <br />
+                In the meantime, download the Themeforest files to your desktop&hellip;<br />
+                <img src="library/images/09-008.jpg" alt="update" /><br />
+                <strong>DOUBLE-CLICK</strong> to find the Bazar_Wordpress_Theme file&hellip;<br />
+                <img src="library/images/09-010.jpg" alt="update" /><br />
+                <strong>DOUBLE CLICK</strong> to find the &ldquo;Bazar&rdquo; zip file&hellip;<br />
+                <img src="library/images/09-011.jpg" alt="update" /><br />
+                <strong>DOUBLE CLICK</strong> on the Bazar zip file to find the &ldquo;Bazar&rdquo; folder.<br />
+                <img src="library/images/09-012.jpg" alt="update" /><br />
+                <strong>DRAG THE BAZAR FOLDER TO YOUR DESKTOP</strong>. Then open your FTP files and navigate to the folder you have designated for your Bazar Shop. Open that folder and find WP-Admin, WP-Content, WP-Includes&hellip;<br />
+                <img src="library/images/09-013.jpg" alt="update" /><br />
+                <strong>DOUBLE CLICK</strong> on Wp-Content&hellip;<br />
+                <img src="library/images/09-014.jpg" alt="update" /><br />
+                <strong>DRAG YOUR &ldquo;BAZAR&rdquo; FOLDER</strong> from your desktop to this FTP folder.<br />
+                <br />
+                <strong>**WARNING &ndash; Do not drag your Bazar folder inside of any of the folders. IT MUST STAND ALONE!</strong><br />
+                <br />
+                <strong>OF COURSE, SINCE THERE IS ALREADY A BAZAR FOLDER IN YOUR FTP FILES, you will quickly receive an alert asking whether you&rsquo;re sure you want to replace it. Click &ldquo;YES ALL&rdquo; to replace the files</strong>.<br />
+                <br />
+                Once the folder has finished uploading/replacing, <strong>it will momentary look as if you have two Bazar file folders, but don&rsquo;t worry; this is only because you haven&rsquo;t refreshed yet</strong>.<br />
+                <br />
+                <strong>There is actually no need to refresh. That will happen automatically, once you close the folder</strong>.<br />
+                <br />
+                <strong>Remember to CLOSE YOUR TWO FTP WINDOWS</strong>, then navigate back to your &ldquo;Themes&rdquo; window on your WP Admin panel. The &ldquo;<strong>Update</strong>&rdquo; alert should be gone, and you should have the most current files.</p>
+
+            <p>And now you&rsquo;re finished and ready for STEP 10!</p>
+
+        </div>
+	</div>
+</div>
+</body>
+</html>

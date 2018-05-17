@@ -1,0 +1,1 @@
+content.xml is in /suave/inc/radium-one-click-demo-install/demo-files

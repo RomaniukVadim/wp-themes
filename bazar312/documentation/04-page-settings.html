@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bazar Premium WordPress Theme documentation</title>
+<link rel="stylesheet" type="text/css" href="library/style.css"/>
+<script type="text/javascript" src="library/scripts/jquery.js"></script>
+<script type="text/javascript" src="library/scripts/jquery.autosize-min.js"></script>
+<script type="text/javascript" src="library/scripts/custom.js"></script>
+</head>
+<body>
+<a href="#header" class="totop">Back to top</a>
+<div id="header">
+	<div id="inner">
+		<div id="logo">
+					<img src="library/images/logo.png" />
+		</div>
+		<div id="meta">
+			<h5>Documentation for Bazar - Premium  Wordpress theme<br/>
+			For <strong>Video tutorials and support</strong> <a href="https://yithemes.com/my-account/support/dashboard/">visit our forum!</a></h5>
+		</div>
+		<div id="nav">
+			<ul id="tabnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="01-install.html">Getting started</a></li>
+				<li><a href="02-pre-customization.html">Pre-Customization</a></li>
+				<li><a href="03-customization.html">Customization</a></li>
+				<li class="active"><a href="04-page-settings.html">Page Settings</a></li>
+				<li><a href="05-navigation.html">Navigation Bar</a></li>
+				<li><a href="06-megamenu.html">Megamenu</a></li>
+				<li><a href="07-shortcodes.html">Shortcodes</a></li>
+				<li><a href="08-widgets.html">Widgets</a></li>
+				<li><a href="09-updating.html">Updating</a></li>
+				<li><a href="10-newsletter.html">Newsletter</a></li>
+                <li><a href="11-localization.html">Localization</a></li>
+                <li><a rel="nofollow" href="12-woocommerce.html">WooCommerce</a></li>
+                <li><a href="13-changelog.html">Changelog</a></li>
+                <li><a href="14-help.html">Getting Help</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="tab1" class="contentwrap">
+        <div class="sidebar">
+
+            <ul>
+                <li><a href="#home">Choosing a "Home" Page</a></li>
+                <li><a href="#blog">Choose and set your blog page</a></li>
+                <li><a href="#pages">Tweaking your pages</a></li>
+                <li><a href="#read">Writing an article and using the &ldquo;READ MORE&rdquo; button</a></li>
+                <li><a href="#contact">Setting Your Contact Page</a></li>
+
+                <a href="#header" class="totop">Back to top</a>
+            </ul>
+
+        </div>
+		
+		<div class="pagecontent">
+            <h2>Page Settings</h2>
+
+            <p>By now your site has the look and feel of a true Bazar shop.</p>
+
+            <p>In this section, you will learn all about Pages, including how to choose and set your Home Page, how to create a Home Page using one of 10 layouts if you did not import the demo content, and how to choose and set your Blog Page.</p>
+
+            <p>You will also learn how to set your Site Pages (including sidebars and SEO settings), how to use the &ldquo;Read More&rdquo; shortcode when you write an article, and how to set your Contact Page.</p>
+
+            Now we will explore the specific contents contained in the editor for the different Page Layouts:<br /><br />
+
+            <h2>1. Home Page</h2>
+
+            a. <strong>For HomePage I, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[recent_products per_page="8" columns="4" orderby="date" order="desc"]
+                    [products_tabs per_page="-1" slider="yes" orderby="menu_order" order="desc" categories="must-have, best-seller, special-offers, " ]
+                </textarea>
+                <br />
+                b. <strong>For HomePage II, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[products_slider title="FEATURED PRODUCTS " per_page="9" featured="yes" latest="no" best_sellers="no" on_sale="no" category="0" orderby="menu_order" order="desc" layout="default" ]
+
+                    [products_slider title="ON SALE " per_page="9" featured="no" latest="no" best_sellers="no" on_sale="yes" category="0" orderby="menu_order" order="desc" layout="default" ]
+
+
+                </textarea>
+                <br />
+                c. <strong>For HomePage III, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[one_fourth class="" last="no" ]
+                    <h3>E-commerce theme</h3>
+                    <img class="aligncenter size-full wp-image-843" alt="" src="http://yourinspirationtheme.com/demo/cheope/files/2012/10/shop.jpg" width="250" height="158" />
+                    Fusce nec accumsan eros. Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum. Donec volutpat nisl ac mauris consectetur gravida.
+                    [/one_fourth]
+                    [one_fourth class="" last="no" ]
+                    <h3>Responsive design</h3>
+                    <img class="aligncenter size-full wp-image-845" alt="" src="http://yourinspirationtheme.com/demo/cheope/files/2012/10/responsive.jpg" width="250" height="158" />
+                    Fusce nec accumsan eros. Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum. Donec volutpat nisl ac mauris consectetur gravida.
+                    [/one_fourth]
+                    [one_fourth class="" last="no" ]
+                    <h3>Clean and corporate</h3>
+                    <img class="aligncenter size-full wp-image-846" alt="" src="http://yourinspirationtheme.com/demo/cheope/files/2012/10/corporate.jpg" width="250" height="158" />
+                    Fusce nec accumsan eros. Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum. Donec volutpat nisl ac mauris consectetur gravida.
+                    [/one_fourth]
+                    [one_fourth class="" last="yes" ]
+                    <h3>Fall in love with Bazar</h3>
+                    <img class="aligncenter size-full wp-image-847" alt="" src="http://yourinspirationtheme.com/demo/cheope/files/2012/10/love.jpg" width="250" height="158" />
+                    Fusce nec accumsan eros. Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum. Donec volutpat nisl ac mauris consectetur gravida.
+                    [/one_fourth]
+                    [clear]
+                    [products_slider title="Featured Products" per_page="-1" featured="no" latest="yes" best_sellers="no" category="0" orderby="menu_order" order="desc" ]
+                    [call_three title="Stay updated with the last offers" incipit="subscribe our newsletter. No spam, we promise." email="email" email_label="your e-mail" submit="ADD ME TO THE LIST" action="" method="post" ]
+
+
+                </textarea>
+                <br />
+                d. <strong>For HomePage IV, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[products_slider title="NEW PRODUCTS ON BAZAR" per_page="8" featured="no" latest="yes" best_sellers="no" category="0" orderby="menu_order" order="desc" layout="default" ]
+                    <h3>ON SALE</h3>
+                    [show_products per_page="3" category="0" show="onsale" orderby="menu_order" order="desc" layout="default" ]
+
+
+                </textarea>
+                <br />
+                e. <strong>For HomePage V, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[section_services items="4" title="" description="" show_excerpt="yes" excerpt_length="10" show_title="yes" show_detail_hover="yes" show_title_hover="yes" show_services_button="yes" services_button_text="Read More" services_style="bandw" items_per_row="4" ]
+                    [products_tabs per_page="-1" slider="yes" orderby="menu_order" order="desc" categories="must-have, best-seller, special-offers, " ]
+
+
+                </textarea><br />
+                f. <strong>For HomePage VI, you will use the following Shortcodes</strong>: <br />
+                <textarea class="smalltext">[show_products per_page="6" category="0" show="all" orderby="menu_order" order="desc" layout="default" ]
+
+                </textarea>
+                <br />
+                g. <strong>For HomePage VII, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[products_categories per_page="4" numbers="yes" hide_empty="yes" style="transparent" orderby="menu_order" order="desc" category="30, 36, 34, 35, " ]
+
+                </textarea>
+                <br />
+                h. <strong>For HomePage VIII, you will use the following Shortcodes</strong>:
+                <textarea class="smalltext"><h2>WELCOME TO BAZAR, ANOTHER GREAT <span style="color: #d28d2c;">E-COMMERCE THEME</span></h2>
+                    [border]
+                    Sed ac arcu quis mauris aliquam vulputate sed nec felis. Nulla nec magna a justo tempus congue ac at felis. <a href="#">Maecenas non arcu</a> sed tortor tincidunt feugiat a ac nisl. Vestibulum vel lorem ac justo tincidunt porta ultrices porttitor mi.
+                    Aliquam laoreet malesuada est, at dignissim est lacinia non. Vestibulum sodales leo ac risus luctus malesuada. Maecenas vel risus arcu. Aenean eu nisl id ante elementum scelerisque.
+                    Nullam nisi orci, <strong>sodales eu tempor</strong> ut, placerat vehicula sem. Aenean pulvinar rutrum ipsum sit amet dictum. Aliquam vitae sagittis leo.
+                    Nam at enim non diam fermentum dapibus vitae in sem. Suspendisse vestibulum lorem sed nulla feugiat auctor. Vivamus consectetur augue ut nisi blandit faucibus. Phasellus sit amet neque rhoncus ante congue porttitor.
+
+
+                </textarea>
+                <br />
+
+                i. <strong>For HomePage IX, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[features_tab name="demo"]
+
+                </textarea>
+                <br />
+                j. <strong>For HomePage X, you will use the following Shortcodes</strong>:<br />
+                <textarea class="smalltext">[numbers_sections number="1" title="Register on =Bazar shop=" last="no" ]Quisque nec mi eu nibh aliquam elementum. Ut cursus nisl sit amet sapien dignissim at adipiscing lectus ornare lorem lorem dieus.[/numbers_sections]
+                    [numbers_sections number="2" title="Enjoy our =products=" last="no" ]Quisque nec mi eu nibh aliquam elementum. Ut cursus nisl sit amet sapien dignissim at adipiscing lectus ornare lorem lorem dieus.[/numbers_sections]
+                    [numbers_sections number="3" title="Get our free =discount=" last="no" ]Quisque nec mi eu nibh aliquam elementum. Ut cursus nisl sit amet sapien dignissim at adipiscing lectus ornare lorem lorem dieus.[/numbers_sections]
+                    [numbers_sections number="4" title="..be happy =and go shopping!=" last="yes" ]Quisque nec mi eu nibh aliquam elementum. Ut cursus nisl sit amet sapien dignissim at adipiscing lectus ornare lorem lorem dieus.[/numbers_sections]
+                    [products_tabs per_page="-1" slider="yes" orderby="menu_order" order="desc" categories="must-have, best-seller, special-offers, " ]
+                    [one_third class="" last="no" ]
+                    [banner width="0" height="92" url="#" target="no" title="GET A FREE SUPPORT" subtitle="Call us +00 39 837372" title_size="16" title_size_hover="10" subtitle_size="12" subtitle_size_hover="17" icon_size="38" icon_size_hover="52" background="" background_image="" border="#d0cece" color_icon="#a1a1a1" color_title="#000000" color_subtitle="#666464" background_hover="#464646" border_hover="" color_icon_hover="#f09d0c" color_title_hover="#d0cece" color_subtitle_hover="#fff" type="switch-text" icon="phone" style="no" ]
+                    [/one_third]
+                    [one_third class="" last="no" ]
+                    [banner width="0" height="92" url="#" target="no" title="OUR HAPPY CUSTOMERS SAY.." subtitle="Read the great testimonials" title_size="18" title_size_hover="12" subtitle_size="14" subtitle_size_hover="18" icon_size="35" icon_size_hover="50" background="" background_image="" border="#d0cece" color_icon="#a1a1a1" color_title="#000000" color_subtitle="#666464" background_hover="#464646" border_hover="" color_icon_hover="#f09d0c" color_title_hover="#d0cece" color_subtitle_hover="#fff" type="switch-text" icon="comments-alt" style="no" ]
+                    [/one_third]
+                    [one_third class="" last="yes" ]
+                    [banner width="0" height="92" url="#" target="no" title="ENJOY OUR LATEST NEWS" subtitle="enjoy our blog" title_size="16" title_size_hover="10" subtitle_size="12" subtitle_size_hover="17" icon_size="35" icon_size_hover="50" background="" background_image="" border="#d0cece" color_icon="#a1a1a1" color_title="#000000" color_subtitle="#666464" background_hover="#464646" border_hover="" color_icon_hover="#f09d0c" color_title_hover="#d0cece" color_subtitle_hover="#fff" type="switch-text" icon="bullhorn" style="no" ]
+                    [/one_third]
+                </textarea><br>
+
+
+
+            <h2><a name="home"></a>1. Choosing a "Home" Page</h2>
+            <p><strong>CHOOSE AND SET YOUR HOME PAGE</strong> - We have included many Page Layouts for you to choose from. Here are two ways to choose and set your Home Page.<br />
+                <br />
+                <strong>First Method: If you installed the Demo Content,</strong> you don&rsquo;t need to create a new Home Page, you just need to choose from among the ten (10) Home Pages that were automatically created from the demo content.<br />
+                <br />
+                Now let&rsquo;s suppose you want <strong>HOME-II</strong> as your home page. To set it, you would navigate to your <strong>WP-Admin panel</strong>, scroll down the left sidebar to &ldquo;<strong>Settings</strong>&rdquo; and click on &ldquo;<strong>Reading Settings:</strong>&rdquo;<br />
+                <br />
+                Click on &ldquo;<strong>A static page</strong>&rdquo;, then <strong>click on the &ldquo;Front Page Box&rdquo;</strong> to open a drop-down list. In this example, <strong>we chose &ldquo;Home II&rdquo;</strong> as our Home page.<br />
+                <img src="library/images/04-001.jpg" alt="04" /><br />
+                Next, <strong>choose a Blog page</strong> by <strong>clicking the &ldquo;Posts Page tab&rdquo;</strong> to open a drop-down list. Here, <strong>we chose Sphera</strong>.<br />
+                <img src="library/images/04-002.jpg" alt="04" /><br />
+                Now you can further customize your site:<br />
+                <br />
+                Decide <strong>how many Blog Pages and Syndication feeds</strong> you want to show.<br />
+                <br />
+                Regarding <strong>feed articles, click to show the full text</strong>.<br />
+                <br />
+                **Note &ndash; We will demonstrate how to use the &ldquo;Read More&rdquo; button.<br />
+                <br />
+                Decide whether you want to <strong>discourage the Search Engines</strong> from indexing your site.<strong> **Note &ndash; this is usually chosen while the site is being set up and tweaked. You can always go back later and un-click it so that the Search Engines will index it.</strong><br />
+                <br />
+                <strong>NOW SAVE YOUR CHANGES! </strong></p>
+
+            <h2><a name="blog"></a>2. Choose and set your blog page</h2>
+            <p><strong>CHOOSE AND SET YOUR BLOG PAGE</strong>.<br />
+                Now you will need to do the same thing for your blog. Note here that <strong>we chose the &ldquo;Sphera&rdquo; blog design</strong> from the &ldquo;<strong>Pages</strong>&rdquo; option on the left. After we click &ldquo;<strong>Add to Menu</strong>&rdquo;, the Sphera page appears on the menu.<br />
+                <br />
+                Next, we <strong>clicked the Sphera drop-down arrow</strong> and it opened to look like the image below.<br />
+                <br />
+                Then we <strong>changed the &ldquo;Navigation Label&rdquo; from Sphera to &ldquo;Blog&rdquo;.</strong> You may change your Navigation Label to whatever you choose, such as &ldquo;News&rdquo; or &ldquo;Information&rdquo;.<br />
+                <br />
+                Note that the bottom of the drop-down shows &ldquo;Original: Sphera.&rdquo; This means you are using the &ldquo;Sphera&rdquo; layout but you have re-named it &ldquo;Blog&rdquo;.<br />
+                <img src="library/images/04-003.jpg" alt="04" /><br />
+                Be sure to save all your changes!<br />
+                <br />
+                BUT WAIT! If you DID NOT import the Demo Content, you will need to MANUALLY CREATE your Home and Blog Pages. Here&rsquo;s how:<br />
+                First, go to your WP-Amin left sidebar, <strong>click on &ldquo;Pages&rdquo;</strong> and click <strong>&ldquo;Add New&rdquo;</strong>.<br />
+                <img src="library/images/04-004.jpg" alt="04" /><br />
+                <strong>Name your new page &ldquo;Home,&rdquo; &ldquo;Home-I,&rdquo; &ldquo;Home-II,&rdquo; or whatever is appropriate for the Home Page layout that you are using.</strong><br />
+                <br />
+                Now scroll to the right sidebar and <strong>click on the Template drop-down arrow</strong>. From the drop-down, <strong>choose the &ldquo;Home&rdquo; template</strong>.<br />
+                <br />
+                Scroll up to <strong>&ldquo;Parent&rdquo;</strong> and click on the drop-down. Then <strong>click &ldquo;Home&rdquo;</strong> because the Home page will be the parent.<br />
+                <br />
+                Add any content you want, or add the content later, whichever you choose.<br />
+                <br />
+                Now scroll up and <strong>click &ldquo;Publish&rdquo;</strong>.<br />
+                <img src="library/images/04-005.jpg" alt="04" /><br />
+                
+
+                <strong>Create your Blog Page the same way</strong>.<br />
+                <br />
+                First, add a new page, <strong>give it a name</strong> (we called ours &ldquo;Blog&rdquo;), then <strong>scroll to &ldquo;Parent&rdquo; and click on &ldquo;Blog&rdquo;.</strong> Then <strong>scroll to &ldquo;Template&rdquo; and click on &ldquo;Blog&rdquo;.</strong><br />
+                <img src="library/images/04-006.jpg" alt="04" /><br />
+                That&rsquo;s all there is to it!<br />
+                <br />
+                    <strong>**Note: You can show blog posts on other pages that are not using the Blog template, by using the &ldquo;Blog&rdquo; shortcode. You can find it by clicking the &ldquo;Y&rdquo; in the Visual text window (shown above), or by clicking &ldquo;Get Shortcodes&rdquo; if you are using the Text Window.</strong></p>
+            </p>
+
+            <h2><a name="pages"></a>3. Tweaking your pages</h2>
+            <p><strong><strong>TWEAKING YOUR PAGES</strong> &ndash; Whether you create your Pages via manually or via demo content, you can do many things to tweak and improve them.<br />
+                <br />
+                Every Page will include these options:<br />
+                <img src="library/images/04-007.jpg" alt="04" /><br />
+                In this example, we are preparing to tweak our Blog Page, which looks like this:<br />
+                <img src="library/images/04-008.jpg" alt="04" /><br />
+                Beginning with &ldquo;<strong>Page Settings</strong>&rdquo;, we made the following changes:<br />
+                <br />
+                a. Slogan &ndash; We added &ldquo;<strong>Your Blog News</strong>&rdquo;<br />
+                <br />
+                b. Sub-Slogan &ndash; We added &ldquo;<strong>Get it Here</strong>&rdquo;<br />
+                <br />
+                c. SideBar &ndash; Note by the highlighted sidebar that we decided to <strong>use the &ldquo;Right Sidebar&rdquo;</strong>. Then, since different pages can have different sidebars, we opened <strong>the Sidebar Dropdown</strong> to choose which sidebar to use. In our case, we decided to use the same sidebar that we use for the <strong>Home-11 layout</strong>.<br />
+                <img src="library/images/04-009.jpg" alt="04" /><br />
+                <strong>DON&rsquo;T FORGET TO SCROLL UP TO THE TOP RIGHT SIDE OF YOUR PAGE AND CLICK &ldquo;UPDATE!&rdquo;</strong><br />
+                <br />
+                This is what our tweaked Blog Page looks like. Note the &ldquo;Stay Updated&rdquo; info and &ldquo;Popular Posts&rdquo; info which appear to the &ldquo;Right Sidebar&rdquo;.<br />
+                <img src="library/images/04-010.jpg" alt="04" /><br />
+                Now we will proceed to &ldquo;<strong>SEO</strong>&rdquo;, or &ldquo;<strong>Search Engine Optimization</strong>&rdquo;. **Note - This demonstration is not included to give you a lesson on SEO, but only to show you how you can tweak our pages:<br />
+                <br />
+                Depending upon your website&rsquo;s theme and your page&rsquo;s purpose, you can choose a popular SEO title for your page. We gave our blog page the title of &ldquo;Indie News&rdquo;.<br />
+                <img src="library/images/04-011.jpg" alt="04" /><br />
+                You can also include important keywords and a page description. We used &ldquo;indie&rdquo; and &ldquo;entrepreneur&rdquo; as key words, then wrote a quick page description.<br />
+                <br />
+                There are many places that can help you develop keywords. One example is <a rel="nofollow" href="http://tinyurl.com/27uvznm">Google Keywords</a>.<br />
+                <br />
+                <strong>CLICK SAVE THEN REFRESH! </strong><br />
+                <br />
+                On first glance, it may seem as if nothing has changed, but it has:<br />
+                <img src="library/images/04-012.jpg" alt="04" /><br />
+                Notice here that even though your visitor is technically on your blog page, the tab says &ldquo;<strong>Indie News</strong>&rdquo;, just as you labeled it on the SEO page.<br />
+                <br />
+                Now let&rsquo;s tweak the Header:<br />
+                <img src="library/images/04-013.jpg" alt="04" /><br />
+                For purposes of this demonstration, we chose <strong>the slider &ldquo;Flexslider Elegant&rdquo;</strong>, but you can add whatever you like. Also, we are leaving the other &ldquo;tweak possibilities&rdquo; to you to experiment with as you please. <strong>SAVE AND REFRESH!</strong><br />
+                <br />
+                Now let&rsquo;s see how our Blog page looks with a slider on it:<br />
+                <br />
+                Here it is, complete with the <strong>Flexslider Elegant choice!</strong> Notice that it still displays the <strong>Slogan and Sub-Slogan</strong> we assigned to it earlier.<br />
+                <img src="library/images/04-014.jpg" alt="04" /><br />
+                Our next tweak is the background color or image:<br />
+                <img src="library/images/04-015.jpg" alt="04" /><br />
+                You can experiment with any image, color or option you desire. <strong>SAVE AND REFRESH!</strong> Here is how our Blog page looks after inserting a custom green color:<br />
+                <img src="library/images/04-016.jpg" alt="04" /><br />
+                For the Google Maps Page Tweak, please see the Bazar Shop video tutorial.</p>
+
+            <h2><a name="read"></a>4. Writing an article and using the &ldquo;READ MORE&rdquo; button</h2>
+            <p><strong><strong>WRITING AN ARTICLE AND USING THE &ldquo;READ MORE&rdquo; BUTTON</strong> &ndash; First you need to <strong>CREATE A NEW POST</strong>. Scroll to the left sidebar of your WP-Admin panel, <strong>click on &ldquo;Posts&rdquo;</strong> and from the drop-down, <strong>choose &ldquo;Add New&rdquo;</strong>.<br />
+                <img src="library/images/04-017.jpg" alt="04" /><br />
+                When the Post Page opens, <strong>give it a title, add some text, choose a Format, and choose a Category</strong>. In this example, we&rsquo;ve added two paragraphs of text. <strong>We have also chosen the &ldquo;Standard&rdquo; format and we listed this article as &ldquo;Uncategorized&rdquo;.</strong><br />
+                <img src="library/images/04-018.jpg" alt="04" /><br />
+                To see how your article will look <strong>BEFORE YOU SAVE IT</strong>, you <strong>can scroll to the top right and click &ldquo;Save Draft&rdquo; then &ldquo;Preview&rdquo;.</strong> Here is what ours looks like:<br />
+                <img src="library/images/04-019.jpg" alt="04" /><br />
+                But perhaps you want to <strong>abbreviate the text so that your visitors will only see the first paragraph</strong>, and will have to <strong>click &ldquo;Read More&rdquo;</strong> to read the rest of the post. Here&rsquo;s how to do it:<br />
+                <br />
+                First, decide how much text you want your readers to see. In the example below, we decided to show the first paragraph only, so we scrolled to the end of the paragraph and clicked so that the cursor appeared there.<br />
+                <br />
+                Next, we located the word &ldquo;<strong>More</strong>&rdquo; on the Post toolbar (highlighted in this example). When <strong>we clicked &ldquo;More&rdquo; the shortcode appeared at the end of the first paragraph</strong>.<br />
+                <img src="library/images/04-020.jpg" alt="04" /><br />
+                And here&rsquo;s how the &ldquo;More&rdquo; shortcode looks in the <strong>Visual Editor</strong>:<br />
+                <img src="library/images/04-021.jpg" alt="04" /><br />
+                Next, <strong>we scrolled right and clicked &ldquo;Publish&rdquo;</strong>, because this is the only way to see how the finished post will look. Then we clicked &ldquo;<strong>Preview</strong>&rdquo;, and here&rsquo;s our Post with &ldquo;More:&rdquo;<br />
+                <br />
+                Notice that the title <strong>&ldquo;Test Post&rdquo; has shifted to the left side after we clicked &ldquo;Publish&rdquo;.</strong> Also now only <strong>the first paragraph of the article shows</strong>, and <strong>a NEW BUTTON shows that says, &ldquo;VIEW THE FULL ARTICLE&rdquo;.</strong><br />
+                <img src="library/images/04-022.jpg" alt="04" /><br />
+                But what if you want to <strong>add a picture</strong> to your post? Here&rsquo;s what you do: Scroll to the top of your browser and find and click &ldquo;<strong>EDIT PAGE</strong>&rdquo;. This will take you back to the original &ldquo;Test Post&rdquo; editable screen.<br />
+                <img src="library/images/04-023.jpg" alt="04" /><br />
+                Now scroll down to the bottom right of the page and find and click &ldquo;<strong>Set Featured Image</strong>&rdquo;.<br />
+                <img src="library/images/04-024.jpg" alt="04" /><br />
+                This will open your Media page, and you can either <strong>upload an image</strong> or <strong>use a previously uploaded image</strong>. In the example below, we are using a previously uploaded image. We clicked on <strong>the picture on the third row, second from the left</strong> and a &ldquo;<strong>check mark</strong>&rdquo; appeared, indicating that this is the picture we want to use.<br />
+                <br />
+                Now <strong>scroll to the bottom right</strong> and <strong>click the blue box</strong> that says &quot;<strong>Set Featured Image</strong>&quot;. Then scroll to the <strong>top right</strong> and click &ldquo;<strong>Update</strong>&rdquo;.<br />
+                <img src="library/images/04-025.jpg" alt="04" /><br />
+                Here&rsquo;s how our page looks with the picture we chose:<br />
+                <img src="library/images/04-026.jpg" alt="04" /><br />
+                You can experiment placing the &ldquo;<strong>Read More</strong>&rdquo; button or placing pictures wherever you like on your article.</p>
+
+            <h2><a name="contact"></a>5. Setting Your Contact Page</h2>
+            <p><strong>Setting Your Contact Page</strong> &ndash; Let&rsquo;s assume that you imported the demo content and already have a <strong>Contact Page</strong> (if you DID NOT import the demo content, go ahead and create a Contact Page).<br />
+                <img src="library/images/04-027.jpg" alt="04" /><br />
+                Notice the &ldquo;<strong>short code</strong>&rdquo; in the body of the page. Also notice that we made sure we were using the correct template by <strong>scrolling right to &ldquo;Template&rdquo;</strong> clicking on the drop-down and highlighting &ldquo;<strong>Contact</strong>&rdquo;.<br />
+                <br />
+                To <strong>create your Contact Form</strong>, scroll to the <strong>left Sidebar</strong>, click on &ldquo;<strong>Contact Forms</strong>&rdquo;, then click &ldquo;<strong>Add New</strong>&rdquo;.<br />
+                <br />
+                Here is what your screen will look like. Since you can have as many unique Contact Forms as you like, you should <strong>give each form you create a unique name so you it is easy to find when you want to use it</strong>. For this demonstration, we gave ours the name &ldquo;Your New Contact Form.&rdquo;<br />
+                <img src="library/images/04-028.jpg" alt="04" /><br />
+                Next, you will notice <strong>TWO TABS: Contact Form Configuration and Add/Edit Form</strong>.<br />
+                <br />
+                <strong>Beginning with the Contact Form Configuration tab</strong>, scroll through the options and <strong>complete all the fields</strong>. For example, &ldquo;<strong>Receiver(s) and Senders</strong>&rdquo; will YOUR email, or the email of a person designated by you. Place the <strong>Sender Name of your choice</strong> in the appropriate field. Here, we&rsquo;ve used &ldquo;Admin&rdquo;.<br />
+                <img src="library/images/04-029.jpg" alt="04" /><br />
+                <strong>Complete all the other fields</strong>.<br />
+                <br />
+                Now <strong>click on the Add/Edit Form field</strong>. The screen will have several fields. In this example, <strong>there are four fields: Message, Name, Email, Website</strong>.<br />
+                <img src="library/images/04-030.jpg" alt="04" /><br />
+                On &ldquo;<strong>Enter Your Message</strong>&rdquo;, find and click on the drop-down arrow to get to this screen:<br />
+                <img src="library/images/04-031.jpg" alt="04" /><br />
+                Complete all the fields. **Note &ndash; The DATA NAME field<br />
+                <br />
+                Now open the other three fields and complete the information.<br />
+                <br />
+                <strong>CLICK SAVE!</strong><br />
+                <br />
+                Now navigate back to the <strong>WP-Admin sidebar (left)</strong>, find and click on <strong>Contact Forms&gt;All Contact Forms</strong>. You should have given your Contact Form a name. In our case, <strong>we named ours &ldquo;Contact Form&rdquo;</strong>.<br />
+                <img src="library/images/04-032.jpg" alt="04" /><br />
+                To the extreme right of the &ldquo;Contact Form&rdquo; is <strong>the shortcode that should be copied and pasted into your Contact Page</strong>.<br />
+                <br />
+                <strong>Copy and paste this code into your Contact Page, click UPDATE</strong>, then <strong>scroll to the bottom</strong> of your Contact Page to complete the customization:<br />
+                <br />
+                Just like the earlier pages, <strong>you can tweak your Contact Page</strong>.<br />
+                <br />
+                In this example, <strong>we have tweaked the Slogan, the Sub-Slogan, and the Sidebar</strong> (note that this sidebar is located to the left).<br />
+                <img src="library/images/04-033.jpg" alt="04" /><br />
+                We have previously demonstrated how <strong>to tweak your SEO</strong>, so we will skip this.<br />
+                <br />
+                <strong>Now we will tweak your Contact Page Header</strong>.<br />
+                <br />
+                Notice (in the image below) that we have decided <strong>NOT to use a slider</strong>.<br />
+                <br />
+                We have <strong>moved the &ldquo;Use Static Image&rdquo; button to the &ldquo;On&rdquo; position</strong> because we have our own &ldquo;static&rdquo; custom image we desire to use.<br />
+                <br />
+                To use a custom image, simply <strong>click &ldquo;Upload&rdquo;</strong>, then upload the image from wherever it is located. Once it has finished uploading, <strong>it will produce a link that you should copy and paste into the &ldquo;Static Image&rdquo; box, like the example below</strong>:<br />
+                <img src="library/images/04-034.jpg" alt="04" /><br />
+                <strong>We will not complete a Background tweak</strong> this time, so we will move on to the <strong>Google Map tweak</strong>:<br />
+                <br />
+                Notice that the <strong>Google Map option includes a link to Google Maps</strong>. When you follow that link, you will be able to <strong>insert your business or home address to generate a map link for your website</strong>.<br />
+                <br />
+                <strong>**NOTE &ndash; YOU CAN ALSO USE AN IMAGE LINK IN THE GOOGLE MAP FIELD, IF YOU PREFER.</strong><br />
+                <img src="library/images/04-035.jpg" alt="04" /><br />
+                Now <strong>CLICK SAVE</strong> and <strong>navigate to your Contact Page</strong> to see how it looks in its finished form.<br />
+                <br />
+                Here is our <strong>Contact Page</strong> after all the tweaking. Notice the <strong>Custom image, the Slogan</strong> and <strong>Sub-Slogan</strong> and the <strong>Google Map</strong>.<br />
+                <img src="library/images/04-036.jpg" alt="04" /></p>
+
+            <p>That&rsquo;s all there is to it! Now ON TO STEP FIVE!</p>
+
+
+        </div>
+	</div>
+</div>
+</body>
+</html>

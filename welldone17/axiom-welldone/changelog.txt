@@ -1,0 +1,35 @@
+Version 1.7
+    fixed: product categories child list
+		\themes\axiom-welldone\css\plugin.woocommerce.css
+		\themes\axiom-welldone\skins\less\skin.less
+	fixed: scroll widget shopping cart content in top panel middle
+		\themes\axiom-welldone\css\plugin.woocommerce.css
+	fixed: add uploaded font 
+		\themes\axiom-welldone\fw\core\core.customizer\core.customizer.php
+
+Version 1.6
+    Plugins updated
+    The theme is now compatible with version WooCommerce 3.0 and higher
+    The theme is now compatible with version PHP 7.1
+
+Version 1.5
+    Demo data installer updated
+    Security fixes
+    Plugins updated
+    Documentation updated
+
+Version 1.4
+	Social login improved
+
+Version 1.3
+	Changed Dark color cheme
+	Fixed Login and Register buttons
+
+Version 1.2
+	Google Maps updated
+	
+Version 1.1
+	Added Dummy Data Installer
+	
+Version 1.0
+	Release Welldone Theme

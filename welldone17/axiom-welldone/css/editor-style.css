@@ -1,0 +1,423 @@
+/*
+Theme Name: Mariana Blog
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Caption
+ * 6.0 - Galleries
+ * 7.0 - Audio / Video
+ * 8.0 - RTL
+ * 9.0 - Media Queries
+ */
+
+
+/**
+ * 1.0 Body
+ */
+
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	font-weight: 400;
+	color: #8a8a8a;
+	margin: 1.5em 2em;
+	vertical-align: baseline;
+}
+
+
+/**
+ * 2.0 Typography
+ */
+
+h1, h2, h3, h4, h5, h6 { line-height:120%; }
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, address { margin: 0; }
+h1+h2,h1+h3,h1+h4,h1+h5,h1+h6,
+h2+h3,h2+h4,h2+h5,h2+h6,
+h3+h4,h3+h5,h3+h6,
+h4+h5,h4+h6,
+h5+h6 {
+	margin-top:0;
+}
+dt, b, strong {	font-weight: 500; }
+p, ul, ol, dl, blockquote, address { margin-bottom: 1.5em; }
+li > ol, li > ul { margin-bottom:0; }
+ul>li, ol>li, dl>dd { margin-bottom:0.5em; }
+li>ul, li>ol, dd>dl { margin-top:0.5em; }
+li > p { margin-bottom:0; }
+li > p+p { margin-top:0.5em; }
+
+ol, ul {
+	padding-left:1.5em;
+}
+
+h1 {
+  font-size: 3.5714em;
+  line-height: 1.3em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+}
+h2 {
+  font-size: 3.2143em;
+  line-height: 1.3em;
+  font-weight: 500;
+  margin-top: 0.6667em;
+  margin-bottom: 0.4em;
+}
+h3 {
+  font-size: 3.2143em;
+  line-height: 1.3em;
+  font-weight: 700;
+  margin-top: 0.6667em;
+  margin-bottom: 0.4em;
+}
+h4 {
+  font-size: 1.7857em;
+  line-height: 1.3em;
+  font-weight: 700;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+h5 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 700;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+h6 {
+  font-size: 1.2857em;
+  line-height: 1.3em;
+  font-weight: 700;
+  margin-top: 1.25em;
+  margin-bottom: 0.65em;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #232a34;
+}
+a:hover,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color: #20c7ca;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {	content: ""; }
+blockquote, q {	quotes: "" "";}
+
+dt {	font-weight: bold; }
+dd {	margin-left: 1.5em; }
+b, strong {	font-weight: bold; }
+dfn, cite, em, i { font-style: italic; }
+blockquote { padding: 0.7em; }
+
+pre, code, kbd, tt, var, samp {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+}
+pre {
+	overflow: auto;
+	max-width: 100%;
+}
+abbr, acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+mark, ins {
+	background-color:transparent;
+	text-decoration: none;
+	font-style:italic;
+	font-weight:bold;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup { bottom: 1ex; }
+sub { top: .5ex; }
+small {	font-size: 75%; }
+big {	font-size: 125%; }
+
+
+/**
+ * 3.0 Elements
+ */
+
+hr {
+	background-color: #ebebeb;
+	border: 0;
+	height: 1px;
+	margin-bottom: 2em;
+}
+
+ul,
+ol {
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0 0 0 2em;
+}
+
+dl {
+	margin: 0 0 2em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 2em;
+}
+
+table,
+th,
+td,
+.mce-item-table,
+.mce-item-table th,
+.mce-item-table td {
+	border: 1px solid #ebebeb;
+}
+
+table a {
+	color: #85b7d5;
+}
+
+table,
+.mce-item-table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin: 0 0 2em;
+	width: 100%;
+}
+
+table th,
+.mce-item-table th,
+table caption {
+	border-width: 0 1px 1px 0;
+	font-size: 1em;
+	font-weight: 700;
+	padding: 0.5em;
+	text-align: left;
+	vertical-align: baseline;
+}
+
+table td,
+.mce-item-table td {
+	border-width: 0 1px 1px 0;
+	font-family: inherit;
+	font-size: 1em;
+	padding: 0.5em;
+	vertical-align: baseline;
+}
+
+img {
+	border: 0;
+	height: auto;
+	max-width: 660px;
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+del {
+	opacity: 0.8;
+}
+
+a {
+	border-bottom: 1px solid #85b7d5;
+	color: #85b7d5;
+	text-decoration: none;
+}
+
+
+/**
+ * 4.0 Alignment
+ */
+
+.alignleft {
+	float: left;
+	margin: 0.5em 2em 2em 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.5em 0 2em 2em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0.5em auto;
+}
+
+
+/**
+ * 5.0 Caption
+ */
+
+.wp-caption {
+	background: transparent;
+	border: none;
+	color: #858585;
+	font-family: inherit;
+	margin: 0 0 2em 0;
+	max-width: 660px;
+	padding: 0;
+	text-align: inherit;
+}
+
+.wp-caption.alignleft {
+	margin: 0.5em 2em 1.5em 0;
+}
+
+.wp-caption.alignright {
+	margin: 0.5em 0 1.5em 2em;
+}
+
+.wp-caption.aligncenter {
+	margin: 0.5em auto;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+	font-size: 0.9230em;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+
+/**
+ * 6.0 Galleries
+ */
+
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery .gallery-caption {
+	color: #858585;
+	display: block;
+	font-size: 0.9230em;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+
+/**
+ * 7.0 Audio / Video
+ */
+
+.mce-content-body .wpview-wrap {
+	margin-bottom: 2em;
+}
+
+.mce-content-body .wp-audio-playlist {
+	margin: 0;
+}
+
+
+/**
+ * 8.0 RTL
+ */
+
+body.rtl {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+.rtl li > ul,
+.rtl li > ol {
+	margin: 0 2em 0 0;
+}
+
+.rtl table th,
+.rtl table caption {
+	text-align: right;
+}
+
+
+/**
+ * 9.0 Media Queries
+ */
+
+@media screen and (max-width: 740px) {
+	body, img, .wp-caption {
+		max-width: 100%;
+	}
+
+	img, .wp-caption {
+		width: auto !important;
+	}
+}
